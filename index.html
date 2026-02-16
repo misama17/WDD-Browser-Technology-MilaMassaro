@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Browser Technology</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+	<!-- <link rel="icon" type="image/svg+xml" href="images/favicon.svg"> -->
+</head>
+
+<body>
+	<h1>Dit is een schoolopdracht!</h1>
+    
+    <section>
+        <h2>Hallo</h2>
+        <p>Uitleg waarvoor dit formulier is</p>
+    </section>
+    
+
+    <form action="">
+        <fieldset>
+            <legend>Persoonsgegevens overledene</legend>
+            <fieldset>
+                <legend>Naam overledene</legend>
+                <label for="overledene-voorletters">
+                    Voorletter(s)
+                    <input type="text" id="overledene-voorletters">
+                </label>
+                <label for="overledene-tussenvoegels">
+                    Tussenvoegsel(s)
+                    <input type="text" id="overledene-tussenvoegsels">
+                </label>
+                <label for="overledene-achternaam">
+                    Achternaam
+                    <input type="text" id="overledene-achternaam">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>BSN</legend>
+                <label for="bsn">
+                    <!-- CHECKEN OF TYPE GOED IS > kan je iets toevoegen dat duidelijk is alleen nummers? -->
+                    <!-- NOG PATTERN VERBETEREN! -->
+                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern -->
+                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[0-9]{9}" >
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overlijdensdatum</legend>
+                <label for="datum-dag">
+                    <!-- HOE LOS VAN ELKAAR? > dag maand jaar -->
+                    <!-- HOE 2026 ALVAST IN JAAR? -->
+                    <input type="text" id="datum-dag" maxlength="2" placeholder="dd">
+                </label>
+                <label for="datum-maand">
+                    <input type="text" id="datum-maand" maxlength="2" placeholder="mm">
+                </label>
+                <label for="datum-jaar">
+                    <input type="text" id="datum-jaar" maxlength="4" placeholder="jjjj">
+                </label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Partner overledene</legend>
+            <fieldset> 
+                <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+                <div>
+                    <!-- Is het handig om alvast checked te zetten? > wil dat de rest van 1b pas te zien is als "ja". -->
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-getrouwd" checked>
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-getrouwd">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-registratie" checked>
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-registratie">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-verrekenbeding">
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-verrekenbeding">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
+                <label for="datum-dag">
+                    <input type="text" id="datum-dag" maxlength="2" placeholder="dd">
+                </label>
+                <label for="datum-maand">
+                    <input type="text" id="datum-maand" maxlength="2" placeholder="mm">
+                </label>
+                <label for="datum-jaar">
+                    <input type="text" id="datum-jaar" maxlength="4" placeholder="jjjj">
+                </label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kinderen overledene</legend>
+            <fieldset>
+                <legend>Had de overledene kinderen?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-kinderen">
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-kinderen">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Is 1 van de kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-kind">
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-kind">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Had dit overleden kind zelf kinderen?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-kind-kinderen">
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-kind-kinderen">
+                    </label>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Testament overledene</legend>
+            <fieldset>
+                <legend>Had de overledene een testament?</legend>
+                <div>
+                    <label for="">
+                        Nee
+                        <input type="radio" id="" name="overledene-testament">
+                    </label>
+                    <label for="">
+                        Ja
+                        <input type="radio" id="" name="overledene-testament">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gegevens notaris</legend>
+                <fieldset>
+                    <legend>Protocolnummer notaris</legend>
+                    <label for="protocolnummer">
+                        <input minlength="6" maxlength="6" type="text" id="protocolnummer" pattern="[0-9]{6}" >
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Naam notaris</legend>
+                    <label for="notaris-voorletters">
+                        Voorletter(s)
+                        <input type="text" id="notaris-voorletters">
+                    </label>
+                    <label for="notaris-tussenvoegels">
+                        Tussenvoegsel(s)
+                        <input type="text" id="notaris-tussenvoegsels">
+                    </label>
+                    <label for="notaris-achternaam">
+                        Achternaam
+                        <input type="text" id="notaris-achternaam">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Vestigingsplaats</legend>
+                    <label for="notaris-vestigingsplaats">
+                        <input type="text" id="notaris-vestigingsplaats">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Datum van het testament of van de laatste wijziging</legend>
+                    <label for="datum-dag">
+                        <input type="text" id="datum-dag" maxlength="2" placeholder="dd">
+                    </label>
+                    <label for="datum-maand">
+                        <input type="text" id="datum-maand" maxlength="2" placeholder="mm">
+                    </label>
+                    <label for="datum-jaar">
+                        <input type="text" id="datum-jaar" maxlength="4" placeholder="jjjj">
+                    </label>
+                </fieldset>
+            </fieldset>
+
+        </fieldset>
+    </form>
+
+
+</body>
+	
+</html>
