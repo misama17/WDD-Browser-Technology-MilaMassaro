@@ -28,6 +28,7 @@ html, body {
 body {
     background-color: var(--color-background-one);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: .85em;
 }
 
 header svg {
@@ -66,15 +67,41 @@ form {
     margin: 2em;
     background-color: var(--color-background-two);
     color: var(--color-text-two);
+    border-radius: 10px;
+
+    & > fieldset {
+        padding: 1em;
+    }
+
+    & > fieldset > legend {
+        padding: 4em 0 0 0;
+        font-size: 1.25em;
+    }
+
+    & button {
+        background-color: var(--color-accent-one);
+        color: var(--color-text-three);
+        padding: 1em;
+        border-radius: 5px;
+        border: none;
+        display: block;
+        margin: 1em auto;
+    }
 }
 
 fieldset {
     margin: 1em;
     border: none;
+    padding: 0;
+    margin: 0;
 
     & legend {
         color: var(--color-text-one);
     }
+}
+
+legend {
+    padding: 1em 0 .5em 0;
 }
 
 input {
@@ -82,32 +109,61 @@ input {
     border: .5px solid var(--color-background-one);
     padding: .5em;
 
-    /* Hoe ik een specifiek type input kan aanspreken met CSS: https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css */
-    &[type=submit] {
-        background-color: var(--color-accent-one);
-        color: var(--color-text-three);
-        padding: 1em;
-        border-radius: 5px;
-        border: none;
-    }
-
     /* !! ChatGPT gevraagd hoe ik de kleur van de radiobutton aan kon passen */
     &[type=radio] {
         accent-color: var(--color-accent-one);
     }
+}
 
-
+input[type="text"] {
+    width: 100%;
 }
 
 
 
-/* ---------- FORM: persoonsgegevens overledene ----------*/
-form > fieldset:nth-of-type(1) fieldset:nth-of-type(1) {
+/* ---------- FORM ----------*/
+.name {
     display: flex;
     flex-direction: column;
 
     & input {
-        margin: .5em 1em;
+        display: block;
+        margin: .5em 0;
     }
 }
+.date {
+    display: flex;
+    gap: 2em;
+
+    & input {
+        display: block;
+        margin: .5em 0;
+    }
+}
+
+.s1bcd-radio > div {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-bottom: 1em;
+}
+
+/* .date-day {
+    width: 3em;
+}
+
+.date-month {
+    width: 3.5em;
+}
+
+.date-year {
+    width: 4em;
+}
+
+.date-monthh {
+    border-radius: 5px;
+    border: .5px solid var(--color-background-one);
+    padding: .5em;
+    color: var(--color-text-two);
+} */
 
