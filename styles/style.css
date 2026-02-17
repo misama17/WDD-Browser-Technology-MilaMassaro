@@ -5,9 +5,109 @@
 
 html, body {
     overflow-x: clip;
+}
+
+
+/* ---------- COLORS ----------*/
+:root {
+    --color-background-one: #FFC919;
+    --color-background-two: #FDFDFD;
+    --color-background-three: #FFFFFF;
+    --color-background-four: #E6E6E9;
+    --color-text-one: #003082;
+    --color-text-two: #6A6A7A;
+    --color-text-three: #FFFFFF;
+    --color-accent-one: #0063D3;
+    --color-accent-two: #DB0028;
+}
+
+
+
+
+/* ---------- ALGEMEEN ----------*/
+body {
+    background-color: var(--color-background-one);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+header svg {
+    width: 7em;
+    margin: 1em;
+}
+
+header {
+    background-color: var(--color-background-three);
+
+    & p {
+        color: var(--color-accent-two);
+        background-color: var(--color-background-four);
+        padding: 1em;
+    }
+
+    & p strong {
+        text-transform: uppercase;
+    }
+}
+
+h1 {
+    color: var(--color-text-one);
+}
+
+
+/* ---------- SECTION: intro ----------*/
+section:nth-of-type(1) {
+    color: var(--color-text-one);
+}
+
+
+
+/* ---------- FORM: algemeen ----------*/
+form {
+    margin: 2em;
+    background-color: var(--color-background-two);
+    color: var(--color-text-two);
 }
 
 fieldset {
     margin: 1em;
+    border: none;
+
+    & legend {
+        color: var(--color-text-one);
+    }
 }
+
+input {
+    border-radius: 5px;
+    border: .5px solid var(--color-background-one);
+    padding: .5em;
+
+    /* Hoe ik een specifiek type input kan aanspreken met CSS: https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css */
+    &[type=submit] {
+        background-color: var(--color-accent-one);
+        color: var(--color-text-three);
+        padding: 1em;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* !! ChatGPT gevraagd hoe ik de kleur van de radiobutton aan kon passen */
+    &[type=radio] {
+        accent-color: var(--color-accent-one);
+    }
+
+
+}
+
+
+
+/* ---------- FORM: persoonsgegevens overledene ----------*/
+form > fieldset:nth-of-type(1) fieldset:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        margin: .5em 1em;
+    }
+}
+

@@ -6,22 +6,32 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Browser Technology</title>
+    <link rel="icon" type="image/svg+xml" href="/Users/milamassaro/Documents/CMD HVA/Jaar 3/Webdesign & development/MilaMassaro/WDD-Browser-Technology-MilaMassaro/images/imgi_2_nslogo.svg">
 	
 	<link href="styles/style.css" rel="stylesheet">
     <script defer src="scripts/script.js"></script>
-	<!-- <link rel="icon" type="image/svg+xml" href="images/favicon.svg"> -->
+
+    <title>Browser Technology</title>
 </head>
 
 <body>
+<header>
+    <a href="#" aria-label="Logo van NS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 20">
+            <path fill="#003082" d="M22.4 9.6a6 6 0 0 0-4-1.6H7.6l4-4h10.2l1 .5 6 5.9a6 6 0 0 0 3.9 1.6h10.8l-4 4H29.4l-1.1-.5Zm3 8.7a6 6 0 0 0 4 1.7H41l10-10L41 0h-5.6l8 8H32.7l-1.1-.4-6-5.9A6 6 0 0 0 21.9 0H10L0 10l10 10h5.6l-8-8h10.8l1.1.4Z"/>
+        </svg>
+    </a>
+    <p>‼️ <strong>Let op:</strong> Dit is een schoolopdracht</p>
+</header>
+<main>  
 	<h1>Dit is een schoolopdracht!</h1>
     
     <section>
-        <h2>Hallo</h2>
-        <p>Uitleg waarvoor dit formulier is</p>
+        <h2>Hallo!</h2>
+        <p>Uitleg waarvoor dit formulier is (misschien iets over erfbelasting wat het is, wat er met de informatie gedaan wordt etc.) > context geven.</p>
     </section>
     
-
+    <!-- action: naar tweede pagina voor volgende stap sturen. -->
     <form action="">
         <fieldset>
             <legend>Persoonsgegevens overledene</legend>
@@ -41,7 +51,7 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>BSN</legend>
+                <legend>BSN overledene</legend>
                 <label for="bsn">
                     <!-- CHECKEN OF TYPE GOED IS > kan je iets toevoegen dat duidelijk is alleen nummers? -->
                     <!-- NOG PATTERN VERBETEREN! -->
@@ -50,7 +60,7 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>Overlijdensdatum</legend>
+                <legend>Overlijdensdatum overledene</legend>
                 <label for="datum-dag">
                     <!-- HOE LOS VAN ELKAAR? > dag maand jaar -->
                     <!-- HOE 2026 ALVAST IN JAAR? -->
@@ -224,9 +234,12 @@
             </fieldset>
 
         </fieldset>
-    </form>
 
+        <!-- a ref? button? -->
+        <input type="submit" value="Volgende stap">
+    </form>  
 
+</main>  
 </body>
 	
 </html>
