@@ -72,4 +72,7 @@ Toen ik begon met HTML merkte ik dat ik veel kleine vragen had, specifieke vrage
 Ik vind het interessant om me te verdiepen in user experience, dus ben benieuwd naar de komende weken! 
 
 
+## BRONNENLIJST
+
+https://www.silocreativo.com/en/progressive-disclosure-with-css/
 
