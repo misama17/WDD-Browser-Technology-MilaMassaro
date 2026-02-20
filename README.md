@@ -1,4 +1,8 @@
 # WDD-Browser-Technology-MilaMassaro
+
+**Dit is een schoolopdracht**
+
+
 Link naar mijn Notion: https://www.notion.so/Minor-Webdesign-Development-2fd4a28d1c2c8004a247e9f0794a6be0?source=copy_link 
 
 
