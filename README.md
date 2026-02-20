@@ -75,6 +75,14 @@ Ik vond het een prettig begin van de week. Ik kan de colleges goed volgen. Het w
 Toen ik begon met HTML merkte ik dat ik veel kleine vragen had, specifieke vragen. Deze heb ik direct gesteld of even als commentaar opgeschreven zodat ik ze niet vergat en later kon vragen. Hier was de ruimte voor tijdens de workshop op dinsdag. Ik vond het prettig om de gelegenheid te krijgen om onderwerpen te noemen die je graag zou willen bespreken of vragen over had. Wel merkte ik dat deze workshop meer inging op de mogelijkheden en het concept, en wat minder op hoe maak je dit nou met coderen dan eerdere workshops. Ik vind het soms lastig om te weten hoe ik aan iets moet beginnen, waar ik informatie kan vinden etc... Voor mij werkt visueel leren het beste, dus soms heb ik bij deze minor hier wel wat moeite mee merk ik.
 Ik vind het interessant om me te verdiepen in user experience, dus ben benieuwd naar de komende weken! 
 
+**FEEDBACK: presentatie**
+- Schrijf je proces op in ReadMe. Waarom heb je bepaalde keuzes gemaakt? Beargumenteer. Eventueel met plaatjes.
+- Zorg ervoor dat je op het label kan klikken.
+- Date picker is waarschijnlijk de betere keuze ipv text.
+- Het is een goed idee om 2026 er alvast in te zetten bij overlijdensdatum.
+- Je mag best creatief omgaan met het formulier wat betreft vormgeving. Zolang je maar kan beargumenteren waarom je bepaalde keuzes hebt gemaakt.
+- Wat betreft huisstijl: belangrijkste is dat te herkennen is dat het in de stijl van de NS is. Leg meer de focus op functies.
+
 
 ## BRONNENLIJST
 
