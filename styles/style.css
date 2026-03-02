@@ -142,9 +142,8 @@ input[type="text"] {
     margin-bottom: 1em;
 }
 
-
-/* ---------- OPENKLAPPEN VAN VRAGEN ---------- */
-/* /* MARK: Progressive disclosure 1b */
+/* MARK: Openklappen vragen (progressive disclosure)
+/* ---------- Progressive disclosure 1b ---------- */
 .extra-1b1, .extra-1b2 {
     display: none;
 }
@@ -159,3 +158,5 @@ fieldset.deceased-partner:has(.checked-1b1:checked) ~ .extra-1b1 {
 fieldset.deceased-partner:has(.checked-1b1:checked) ~ fieldset.extra-1b1:has(.checked-1b2:checked) ~ .extra-1b2 {
     display: block;
 }
+
+/* ---------- Progressive disclosure 1c ---------- */
