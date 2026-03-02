@@ -16,7 +16,7 @@
 
 <body>
 <header>
-    <a href="#" aria-label="Logo van NS">
+    <a href="#" aria-label="Logo of NS">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 20">
             <path fill="#003082" d="M22.4 9.6a6 6 0 0 0-4-1.6H7.6l4-4h10.2l1 .5 6 5.9a6 6 0 0 0 3.9 1.6h10.8l-4 4H29.4l-1.1-.5Zm3 8.7a6 6 0 0 0 4 1.7H41l10-10L41 0h-5.6l8 8H32.7l-1.1-.4-6-5.9A6 6 0 0 0 21.9 0H10L0 10l10 10h5.6l-8-8h10.8l1.1.4Z"/>
         </svg>
@@ -38,17 +38,17 @@
             <legend>Persoonsgegevens overledene</legend>
             <fieldset class="name">
                 <legend>Naam overledene</legend>
-                <label for="overledene-voorletters">
+                <label for="deceased-initials">
                     Voorletter(s)
-                    <input type="text" id="overledene-voorletters">
+                    <input type="text" id="deceased-initials">
                 </label>
-                <label for="overledene-tussenvoegels">
+                <label for="deceased-prefixes">
                     Tussenvoegsel(s)
-                    <input type="text" id="overledene-tussenvoegsels">
+                    <input type="text" id="deceased-prefixes">
                 </label>
-                <label for="overledene-achternaam">
+                <label for="deceased-surname">
                     Achternaam
-                    <input type="text" id="overledene-achternaam">
+                    <input type="text" id="deceased-surname">
                 </label>
             </fieldset>
             <fieldset>
@@ -62,136 +62,96 @@
             </fieldset>
             <fieldset class="date">
                 <legend>Overlijdensdatum</legend>
-                <label for="date-day">
-                    <!-- HOE 2026 ALVAST IN JAAR? >> value="2026" -->
-                    Dag
-                    <input class="date-day" type="text" id="date-day" maxlength="2" min="1" max="31" placeholder="dd">
-                </label>
-                <label for="date-month">
-                    Maand
-                    <input class="date-month" type="text" id="date-month" maxlength="2" min="1" max="12" placeholder="mm">
-                </label>
-                <!-- <label for="date-month">
-                    Maand
-                    <select class="date-monthh" name="months" id="month-select">
-                        <option value="">Selecteer de maand</option>
-                        <option value="1">Januari</option>
-                        <option value="2">Februari</option>
-                        <option value="3">Maart</option>
-                        <option value="4">April</option>
-                        <option value="5">Mei</option>
-                        <option value="6">Juni</option>
-                        <option value="7">Juli</option>
-                        <option value="8">Augustus</option>
-                        <option value="9">September</option>
-                        <option value="10">Oktober</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                </label> -->
-                <label for="date-year">
-                    Jaar
-                    <input class="date-year" type="text" id="date-year" maxlength="4" placeholder="jjjj">
-                </label>
+                <input type="date">
             </fieldset>
         </fieldset>
 
         <fieldset>
             <legend>Partner overledene</legend>
-            <fieldset class="s1bcd-radio"> 
+            <fieldset class="deceased-partner"> 
                 <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
-                <div>
+                <div class="s1bcd-radio">
                     <!-- Is het handig om alvast checked te zetten? > wil dat de rest van 1b pas te zien is als "ja". -->
-                    <label for="">
-                        <input type="radio" id="" name="overledene-getrouwd" checked>
+                    <!-- FEEDBACK: for en id weg of ingevuld -->
+                    <label for="deceased-married-no">
+                        <input type="radio" id="deceased-married-no" name="deceased-married">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-getrouwd">
+                    <label for="deceased-married-yes">
+                        <input type="radio" id="deceased-married-yes" class="checked-1b1" name="deceased-married">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="s1bcd-radio">
+            <fieldset class="extra-1b1">
                 <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-registratie" checked>
+                <div class="s1bcd-radio">
+                    <label for="deceased-registration-no">
+                        <input type="radio" id="deceased-registration-no" name="deceased-registration">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-registratie">
+                    <label for="deceased-registration-yes">
+                        <input type="radio" id="deceased-registration-yes" class="checked-1b2" name="deceased-registration">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="s1bcd-radio">
+            <fieldset class="extra-1b2">
                 <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-verrekenbeding">
+                <div class="s1bcd-radio">
+                    <label for="deceased-settlement-no">
+                        <input type="radio" id="deceased-settlement-no" name="deceased-settlement">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-verrekenbeding">
+                    <label for="deceased-settlement-yes">
+                        <input type="radio" id="deceased-settlement-yes" name="deceased-settlement">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="date">
+            <fieldset class="extra-1b2">
                 <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
-                <label for="date-day">
-                    Dag
-                    <input class="date-day" type="text" id="date-day" maxlength="2" min="1" max="31" placeholder="dd">
-                </label>
-                <label for="date-month">
-                    Maand
-                    <input class="date-month" type="text" id="date-month" maxlength="2" min="1" max="12" placeholder="mm">
-                </label>
-                <label for="date-year">
-                    Jaar
-                    <input class="date-year" type="text" id="date-year" maxlength="4" placeholder="jjjj">
-                </label>
+                <input type="date">
             </fieldset>
         </fieldset>
 
         <fieldset>
             <legend>Kinderen overledene</legend>
-            <fieldset class="s1bcd-radio">
+            <fieldset>
                 <legend>Had de overledene kinderen?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kinderen">
+                <div class="s1bcd-radio">
+                    <label for="deceased-children-no">
+                        <input type="radio" id="deceased-children-no" name="deceased-children">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kinderen">
+                    <label for="deceased-children-yes">
+                        <input type="radio" id="deceased-children-yes" name="deceased-children">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="s1bcd-radio">
+            <fieldset>
                 <legend>Is 1 van de kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kind">
+                <div class="s1bcd-radio">
+                    <label for="deceased-child-no">
+                        <input type="radio" id="deceased-child-no" name="deceased-child">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kind">
+                    <label for="deceased-child-yes">
+                        <input type="radio" id="deceased-child-yes" name="deceased-child">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="s1bcd-radio">
+            <fieldset>
                 <legend>Had dit overleden kind zelf kinderen?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kind-kinderen">
+                <div class="s1bcd-radio">
+                    <label for="deceased-child-children-no">
+                        <input type="radio" id="deceased-child-children-no" name="deceased-child-children">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-kind-kinderen">
+                    <label for="deceased-child-children-yes">
+                        <input type="radio" id="deceased-child-children-yes" name="deceased-child-children">
                         Ja
                     </label>
                 </div>
@@ -200,15 +160,15 @@
 
         <fieldset>
             <legend>Testament overledene</legend>
-            <fieldset class="s1bcd-radio">
+            <fieldset>
                 <legend>Had de overledene een testament?</legend>
-                <div>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-testament">
+                <div class="s1bcd-radio">
+                    <label for="deceased-testament-no">
+                        <input type="radio" id="deceased-testament-no" name="deceased-testament">
                         Nee
                     </label>
-                    <label for="">
-                        <input type="radio" id="" name="overledene-testament">
+                    <label for="deceased-testament-yes">
+                        <input type="radio" id="deceased-testament-yes" name="deceased-testament">
                         Ja
                     </label>
                 </div>
@@ -217,46 +177,35 @@
             <fieldset>
                 <legend>Gegevens notaris</legend>
                 <fieldset>
-                    <legend>Protocolnummer notaris</legend>
-                    <label for="protocolnummer">
-                        <input minlength="6" maxlength="6" type="text" id="protocolnummer" pattern="[0-9]{6}" >
+                    <legend>protocolnummer notaris</legend>
+                    <label for="protocolnumber">
+                        <input minlength="6" maxlength="6" type="text" id="protocolnumber" pattern="[0-9]{6}" >
                     </label>
                 </fieldset>
                 <fieldset class="name">
                     <legend>Naam notaris</legend>
-                    <label for="notaris-voorletters">
+                    <label for="notary-initials">
                         Voorletter(s)
-                        <input type="text" id="notaris-voorletters">
+                        <input type="text" id="notary-initials">
                     </label>
-                    <label for="notaris-tussenvoegels">
+                    <label for="notary-prefixes">
                         Tussenvoegsel(s)
-                        <input type="text" id="notaris-tussenvoegsels">
+                        <input type="text" id="notary-prefixes">
                     </label>
-                    <label for="notaris-achternaam">
+                    <label for="notary-surname">
                         Achternaam
-                        <input type="text" id="notaris-achternaam">
+                        <input type="text" id="notary-surname">
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Vestigingsplaats</legend>
-                    <label for="notaris-vestigingsplaats">
-                        <input type="text" id="notaris-vestigingsplaats">
+                    <label for="notary-place">
+                        <input type="text" id="notary-place">
                     </label>
                 </fieldset>
                 <fieldset class="date">
                     <legend>Datum van het testament of van de laatste wijziging</legend>
-                    <label for="date-day">
-                        Dag
-                        <input class="date-day" type="text" id="date-day" maxlength="2" min="1" max="31" placeholder="dd">
-                    </label>
-                    <label for="date-month">
-                        Maand
-                        <input class="date-month" type="text" id="date-month" maxlength="2" min="1" max="12" placeholder="mm">
-                    </label>
-                    <label for="date-year">
-                        Jaar
-                        <input class="date-year" type="text" id="date-year" maxlength="4" placeholder="jjjj">
-                    </label>
+                    <input type="date">
                 </fieldset>
             </fieldset>
 
@@ -266,7 +215,6 @@
 
         <!-- a ref? button? -->
         <button type="submit">Volgende stap</button>
-        <!-- <input type="submit" value="Volgende stap"> -->
     </form>  
 
 </main>  
