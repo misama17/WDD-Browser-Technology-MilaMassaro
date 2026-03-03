@@ -145,6 +145,7 @@ Wat ga ik morgen doen?
 
 Morgen is het andere vak CSS.
 
+_Vandaag had ik mijn check-out met Rafi. Hij is vandaag vooral bezig geweest met styling. Hij had het gevoel dat hij achterliep en dat hij best wel in moest komen na de vakantie. Daar kon ik mij helemaal in vinden. En het was wel fijn te horen dat ik daar niet alleen in was._
 
 ## BRONNENLIJST
 
