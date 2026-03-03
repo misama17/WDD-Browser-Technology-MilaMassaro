@@ -84,6 +84,68 @@ Ik vind het interessant om me te verdiepen in user experience, dus ben benieuwd 
 - Wat betreft huisstijl: belangrijkste is dat te herkennen is dat het in de stijl van de NS is. Leg meer de focus op functies.
 
 
+
+### WEEK 4
+
+**maandag 2 maart**
+
+Wat heb ik vandaag gedaan?
+
+Ik heb progressive disclosure geleerd en toegevoegd.
+Ik heb aantekeningen voor weekly geek gemaakt en me verdiept in het onderwerp.
+
+
+Hoeveel tijd heeft dit me gekost?
+
+6 uur totaal.
+60 min workshop
+120 min werken aan opdracht
+30 min uitleg weekly geek
+60 min artikel lezen en aantekeningen maken voor weekly geek
+
+
+Wat heb ik geleerd?
+
+Ik heb leren werken met ":has". 
+Ik heb geleerd hoe ik specifieke secties kan toevoegen en verwijderen wanneer een input checked is.
+
+
+Wat ga ik morgen doen?
+
+Morgen ga ik beginnen met validiteit checken.
+Ik ga de progressive disclosure op alle vragen van vraag 1 toepassen.
+
+
+
+**dinsdag 3 maart**
+
+Wat heb ik vandaag gedaan?
+
+Ik heb geëxperimenteerd met validatie
+
+
+Hoeveel tijd heeft dit me gekost?
+
+6 uur totaal.
+60 - 75 min weekly geek.
+60 min workshop
+150 min eindopdracht
+30 min check-out
+
+Wat heb ik geleerd?
+
+Ik heb geleerd over "role =" in HTML en waarvoor het gebruikt kan worden.
+Hoeveel je met bepaalde HTML elementen kan.
+Ik heb geleerd over valideren.
+Wanneer je JavaScript nodig hebt voor validatie.
+Geëxperimenteerd met validatie.
+
+
+Wat ga ik morgen doen?
+
+Morgen is het andere vak CSS.
+
+
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/
