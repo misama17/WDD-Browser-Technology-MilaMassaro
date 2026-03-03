@@ -27,20 +27,30 @@
 	<h1>Belastingaangifte Erfbelasting</h1>
     
     <section>
-        <h2>Hallo!</h2>
+        <h2>Hallo! (naam)</h2>
         <p>Uitleg waarvoor dit formulier is (misschien iets over erfbelasting wat het is, wat er met de informatie gedaan wordt etc.) > context geven.</p>
     </section>
     
     <!-- NAME TOEVOEGEN OVERAL !!! -->
     <!-- action: naar tweede pagina voor volgende stap sturen. -->
     <form action="" method="post">
+
+        <section class="error_message">
+            <h2></h2>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!------- 1a: Persoonsgegevens overledene ------->
         <fieldset>
             <legend>Persoonsgegevens overledene</legend>
             <fieldset class="name">
                 <legend>Naam overledene</legend>
                 <label for="deceased-initials">
                     Voorletter(s)
-                    <input type="text" id="deceased-initials">
+                    <input type="text" id="deceased-initials" required>
                 </label>
                 <label for="deceased-prefixes">
                     Tussenvoegsel(s)
@@ -48,7 +58,8 @@
                 </label>
                 <label for="deceased-surname">
                     Achternaam
-                    <input type="text" id="deceased-surname">
+                    <!-- !! Vraag Gemini: pattern voor minimaal 2 tekens, alleen letters, inclusief vreemde tekens (accenten)  -->
+                    <input type="text" id="deceased-surname" pattern="[a-zA-ZÀ-ÿ]{2,}$" required>
                 </label>
             </fieldset>
             <fieldset>
@@ -57,15 +68,17 @@
                     <!-- CHECKEN OF TYPE GOED IS > kan je iets toevoegen dat duidelijk is alleen nummers? -->
                     <!-- NOG PATTERN VERBETEREN! -->
                     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern -->
-                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[0-9]{9}" >
+                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" required>
                 </label>
             </fieldset>
             <fieldset class="date">
                 <legend>Overlijdensdatum</legend>
-                <input type="date">
+                <!-- AANPASSEN? Misschien value="2026-01-01" invullen, alleen jaartal is niet mogelijk -->
+                <input type="date" name="date-deceased" max="2026-03-01" required>
             </fieldset>
         </fieldset>
 
+        <!------- 1b: Partner overledene ------->
         <fieldset>
             <legend>Partner overledene</legend>
             <fieldset class="deceased-partner"> 
@@ -111,13 +124,14 @@
             </fieldset>
             <fieldset class="extra-1b2">
                 <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
-                <input type="date">
+                <input type="date" name="date-partnership" min="1926-01-01" max="2026-03-01">
             </fieldset>
         </fieldset>
 
+        <!------- 1c: Kinderen overledene ------->
         <fieldset>
             <legend>Kinderen overledene</legend>
-            <fieldset>
+            <fieldset class="deceased-family">
                 <legend>Had de overledene kinderen?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-children-no">
@@ -125,12 +139,12 @@
                         Nee
                     </label>
                     <label for="deceased-children-yes">
-                        <input type="radio" id="deceased-children-yes" name="deceased-children">
+                        <input type="radio" id="deceased-children-yes" class="checked-1c1" name="deceased-children">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="extra-1c1">
                 <legend>Is 1 van de kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-child-no">
@@ -138,12 +152,12 @@
                         Nee
                     </label>
                     <label for="deceased-child-yes">
-                        <input type="radio" id="deceased-child-yes" name="deceased-child">
+                        <input type="radio" id="deceased-child-yes" class="checked-1c2" name="deceased-child">
                         Ja
                     </label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="extra-1c2">
                 <legend>Had dit overleden kind zelf kinderen?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-child-children-no">
@@ -158,9 +172,10 @@
             </fieldset>
         </fieldset>
 
+        <!------- 1d: Testament ------->
         <fieldset>
             <legend>Testament overledene</legend>
-            <fieldset>
+            <fieldset class="deceased-notary">
                 <legend>Had de overledene een testament?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-testament-no">
@@ -168,25 +183,27 @@
                         Nee
                     </label>
                     <label for="deceased-testament-yes">
-                        <input type="radio" id="deceased-testament-yes" name="deceased-testament">
+                        <input type="radio" id="deceased-testament-yes" class="checked-1d1" name="deceased-testament">
                         Ja
                     </label>
                 </div>
             </fieldset>
 
-            <fieldset>
+            <!------- 1d: Gegevens notaris ------->
+            <fieldset class="extra-1d1">
                 <legend>Gegevens notaris</legend>
                 <fieldset>
-                    <legend>protocolnummer notaris</legend>
+                    <legend>Protocolnummer notaris</legend>
+                    <!-- HOE MOET IK HET PATTERN INSTELLEN HIERVOOR? -->
                     <label for="protocolnumber">
-                        <input minlength="6" maxlength="6" type="text" id="protocolnumber" pattern="[0-9]{6}" >
+                        <input minlength="6" maxlength="6" type="text" id="protocolnumber" pattern="[0-9]{6}">
                     </label>
                 </fieldset>
                 <fieldset class="name">
                     <legend>Naam notaris</legend>
                     <label for="notary-initials">
                         Voorletter(s)
-                        <input type="text" id="notary-initials">
+                        <input type="text" id="notary-initials" required>
                     </label>
                     <label for="notary-prefixes">
                         Tussenvoegsel(s)
@@ -194,7 +211,7 @@
                     </label>
                     <label for="notary-surname">
                         Achternaam
-                        <input type="text" id="notary-surname">
+                        <input type="text" id="notary-surname" pattern="[a-zA-ZÀ-ÿ]{2,}$" required>
                     </label>
                 </fieldset>
                 <fieldset>
@@ -205,7 +222,7 @@
                 </fieldset>
                 <fieldset class="date">
                     <legend>Datum van het testament of van de laatste wijziging</legend>
-                    <input type="date">
+                    <input type="date" name="date-testament" min="1926-01-01" max="2026-03-01">
                 </fieldset>
             </fieldset>
 
