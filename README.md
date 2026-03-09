@@ -145,6 +145,15 @@ Wat ga ik morgen doen?
 
 Morgen is het andere vak CSS.
 
+_Vandaag had ik mijn check-out met Rafi. Hij is vandaag vooral bezig geweest met styling. Hij had het gevoel dat hij achterliep en dat hij best wel in moest komen na de vakantie. Daar kon ik mij helemaal in vinden. En het was wel fijn te horen dat ik daar niet alleen in was._
+
+
+## REFLECTIE: WEEK 4
+
+De laatste zondag van de vakantie (en eigenlijk de hele vakantie) keek ik echt enorm op tegen de minor. Het gaf me zo veel druk, waardoor ik het eigenlijk niet meer wilde doen als ik eerlijk ben... Ik ben altijd iemand die heel hard werkt voor alles en altijd een extra stapje doet. Ik ben niet bang om hard te werken zeg maar. Alleen met deze minor tot nu toe kijk ik er tegenop. Ik probeer dingen nu van dag tot dag te bekijken, zodat het als een minder grote opgave voelt. Maar ik vind het lastig om enthousiast te zijn.
+Wat betreft het vak BT geeft het me aan de ene kant rust dat ik niet allemaal fancy CSS dingen hoef te doen, maar aan de andere kant merk ik ook aan hoe veel je moet denken als je echt een goed formulier wilt maken. Dan hoor ik weer studiegenoten erover praten hoe zij dingen oppakken en dat zit me eigenlijk alleen maar in de weg, want daardoor ga ik denken oh ik moet nog veel te veel doen. Ook het houden van presentaties en de check-outs vind ik eigenlijk heel vervelend. Niet omdat ik bang ben om mijn werk te laten zien, maar omdat ik heel erg zie wat andere doen en ik daarmee het besef krijg hoe veel ik nog moet doen. Terwijl iedereen zijn "eigen weg" heeft en ik weet dat ik er ook wel kom. Maar door die presentaties steeds krijg ik het gevoel dat het niet goed gaat en dat vind ik eerlijk gezegd best wel vervelend.
+
+
 
 ## BRONNENLIJST
 
