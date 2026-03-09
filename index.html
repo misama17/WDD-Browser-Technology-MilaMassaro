@@ -33,15 +33,8 @@
     
     <!-- NAME TOEVOEGEN OVERAL !!! -->
     <!-- action: naar tweede pagina voor volgende stap sturen. -->
+    <!-- Feedback week 2: niet handig >> andere oplossing zoeken. -->
     <form action="" method="post">
-
-        <section class="error_message">
-            <h2></h2>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
 
         <!------- 1a: Persoonsgegevens overledene ------->
         <fieldset>
@@ -58,8 +51,10 @@
                 </label>
                 <label for="deceased-surname">
                     Achternaam
-                    <!-- !! Vraag Gemini: pattern voor minimaal 2 tekens, alleen letters, inclusief vreemde tekens (accenten)  -->
-                    <input type="text" id="deceased-surname" pattern="[a-zA-ZÀ-ÿ]{2,}$" required>
+                    <!-- !! Vraag Gemini: pattern voor minimaal 2 tekens, alleen letters, inclusief vreemde tekens (accenten) en een koppelteken  -->
+                    <!-- Door aria-describedby toe te voegen met eenzelfde id weet de screenreader dat de p bij input hoort (- workshop Victor) -->
+                    <input type="text" id="deceased-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$" aria-describedby="errorID" required>
+                    <p class="error" id="errorID" aria-live="polite"></p>
                 </label>
             </fieldset>
             <fieldset>
@@ -68,7 +63,8 @@
                     <!-- CHECKEN OF TYPE GOED IS > kan je iets toevoegen dat duidelijk is alleen nummers? -->
                     <!-- NOG PATTERN VERBETEREN! -->
                     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern -->
-                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" required>
+                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" aria-describedby="errorID" required>
+                    <p class="error" id="errorID" aria-live="polite"></p>
                 </label>
             </fieldset>
             <fieldset class="date">

@@ -19,6 +19,7 @@ html, body {
     --color-text-three: #FFFFFF;
     --color-accent-one: #0063D3;
     --color-accent-two: #DB0028;
+    --color-accent-hover: #0063D326;
 }
 
 /* ---------- FONTS ----------*/
@@ -147,9 +148,9 @@ input {
     padding: .5em;
 
     /* !! ChatGPT gevraagd hoe ik de kleur van de radiobutton aan kon passen */
-    &[type=radio] {
+    /* &[type=radio] {
         accent-color: var(--color-accent-one);
-    }
+    } */
 
     &[type=date] {
         width: 100%;
@@ -162,6 +163,7 @@ input {
     }
 }
 
+
 .name {
     display: flex;
     flex-direction: column;
@@ -172,12 +174,43 @@ input {
     }
 }
 
-.s1bcd-radio {
+/* .s1bcd-radio {
     display: flex;
     flex-direction: column;
     gap: .5em;
     margin-bottom: 1em;
-}
+} */
+
+.s1bcd-radio {
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & label {
+    display: inline-block;
+    padding: 1em 4em;
+    margin: 1em .5em 1em 0;
+    gap: 2em;
+
+    border: .5px solid var(--color-text-two);
+    border-radius: 8px;
+
+    color: var(--color-text-one);
+
+    &:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    &:has(input:checked) {
+        border: 2px solid var(--color-background-one);
+    }
+
+    &:has(input:not(:checked)) {
+        color: var(--color-text-two);
+    }
+    }
+} 
+
 
 
 
@@ -227,7 +260,25 @@ fieldset.deceased-notary:has(.checked-1d1:checked) ~ .extra-1d1 {
 
 /* MARK: Validity
 /* ---------- Name ---------- */
-input:user-invalid {
+/* Direct op input geplaatst: pattern klopt niet? dan GELIJK melding */
+/* input:user-invalid {
   border: 1px solid var(--color-accent-two);
   border-left-width: 6px;
+} */
+
+input[aria-invalid="true"] {
+    border: 1px solid var(--color-accent-two);
+    border-left-width: 6px;
+}
+
+/* VRAAG: beter groene kleur geven of terug naar origineel laten gaan? */
+input[aria-invalid="false"] {
+    border: .5px solid var(--color-background-one);
+}
+
+
+/* MARK: Error message
+/* ---------- Foutmelding ---------- */
+.error {
+    color: var(--color-accent-two);
 }
