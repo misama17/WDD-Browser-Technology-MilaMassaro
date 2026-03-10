@@ -155,6 +155,38 @@ Wat betreft het vak BT geeft het me aan de ene kant rust dat ik niet allemaal fa
 
 
 
+**maandag 9 maart**
+
+Wat heb ik vandaag gedaan?
+
+Ik heb de validatie met JavaScript afgemaakt, maar vraag me af of dit wel handig was om te doen. Want wat als JavaScript niet werkt? Misschien dat ik dan toch beter direct in CSS input:user-invalid kan gebruiken, alleen is dit misschien vervelend voor de gebruiker? Nu ik erover nadenk is het vervelend voor de gebruiker als ze direct zien dat het fout is, maar op zich niet per se als ze het al ingevuld hebben en doorgaan naar de volgende. Hier nog even over nadenken wat handig is.
+Ik heb de styling van de radio buttons helemaal veranderd. Ik had eerst standaard radio buttons, maar deze zijn vrij klein. In de presentatie vrijdag kwam naar voren dat het beter zou zijn ze anders te stijlen. 
+Ik heb feedback van de presentatie verwerkt vandaag.
+
+
+Hoeveel tijd heeft dit me gekost?
+
+Ik was vandaag later op studie, omdat ik naar de podotherapeut moest.
+3 uur totaal.
+2 uur aan eindopdracht werken.
+30 min weekly geek.
+15 min check-out.
+
+
+Wat heb ik geleerd?
+
+Validatie met JavaScript werkend maken.
+
+
+Wat ga ik morgen doen?
+
+Validatie afmaken (error message fixen), vragen hoe ik het robuust kan doen: misschien toch CSS in plaats van veel gebruik van JavaScript voor validatie?, tweede pattern uitwerken, upload bestand button toevoegen bij vraag.
+
+
+_Ik had vandaag mijn check-out met Joshua en hij had een goed punt dat het misschien beter is om tóch validiteit volledig met CSS te doen omdat het betrouwbaarder is_
+
+
+
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/
