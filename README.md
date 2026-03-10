@@ -187,6 +187,40 @@ _Ik had vandaag mijn check-out met Joshua en hij had een goed punt dat het missc
 
 
 
+**dinsdag 10 maart**
+
+Wat heb ik vandaag gedaan?
+
+Ik heb de validatie afgemaakt en werkend gemaakt.
+Ik heb een user-invalid in CSS toegevoegd voor als JavaScript niet werkt.
+Ik heb progress bar gemaakt.
+Ik heb geprobeerd met alleen CSS van pagina naar pagina te gaan (gebruik makend van 1 HTML), maar na feedback van Vasilis besloten om meer HTML pagina's te maken.
+Ik heb een scroll-bar toegevoegd aan de form, zodat ze niet alleen van het hele formulier de progress zien maar ook van de vraag zelf.
+
+
+Hoeveel tijd heeft dit me gekost?
+
+6 uur.
+Hele dag aan eindopdracht. 
+
+
+Wat heb ik geleerd?
+
+parentNode op JavaScript.
+Hoe je een scrollbar toevoegt, ik dacht dat dit veel ingewikkelder zou zijn.
+
+
+Wat ga ik morgen doen?
+
+CSSen
+
+
+_Check-out met Julius, wat dingetjes besproken:_
+_input:user-valid + .error-msg in CSS >> display:block; .error-msg { display:none }_
+_nav buiten form plaatsen. Pas naar volgende pagina als alles ingevuld is?_
+
+
+
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/
