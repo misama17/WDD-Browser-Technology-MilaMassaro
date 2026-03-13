@@ -221,6 +221,13 @@ _nav buiten form plaatsen. Pas naar volgende pagina als alles ingevuld is?_
 
 
 
+## REFLECTIE: WEEK 5
+
+Deze week ging het beter. Ik was rustiger in mijn hoofd, waardoor het ook makkelijker werd om dingen echt uit te voeren. De weken hiervoor zat ik zo erg in mijn hoofd van ik moet hier nog aan denken en hier nog aan denken, waardoor ik eigenlijk een beetje bevroor en voor mijn gevoel niet verder kwam. En dit gaf me weer stress. Maar deze week bekeek ik het echt van onderdeel tot onderdeel. Dus eerst dacht ik oke ik ga me focussen op validatie vandaag. Daarna ga ik verder naar het volgende etc. 
+Op donderdag hadden we een weekly nerd over formulieren. Ik vond dit heel lastig te volgen. Dit kwam denk ik door het tijdstip, maar ook omdat het een beetje eentonig was voor mijn gevoel. Ik ben een visuele leerder, dus ik zie persoonlijk liever voorbeelden met uitleg, dan een dia met tekst. Nu werden er wel voorbeelden gegeven maar daar werd heel snel doorheen gegaan en diende meer als voorbeeldje dan dat er aan de hand daarvan uitgelegd werd.
+
+
+
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/

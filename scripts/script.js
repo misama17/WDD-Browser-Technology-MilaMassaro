@@ -24,6 +24,11 @@ form.addEventListener('submit', event => {
         if (!input.checkValidity()) {
             // Stopt verzending van formulier als het niet correct is ingevuld/voor de check
             event.preventDefault()
+            
+            //input.validity.valid
+            //true of false
+            //input.validity.valueMissing
+            //https://developer.mozilla.org/en-US/docs/Web/API/ValidityState
 
             input.setAttribute("aria-describedby", "errorID")
 
