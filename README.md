@@ -227,8 +227,43 @@ Deze week ging het beter. Ik was rustiger in mijn hoofd, waardoor het ook makkel
 Op donderdag hadden we een weekly nerd over formulieren. Ik vond dit heel lastig te volgen. Dit kwam denk ik door het tijdstip, maar ook omdat het een beetje eentonig was voor mijn gevoel. Ik ben een visuele leerder, dus ik zie persoonlijk liever voorbeelden met uitleg, dan een dia met tekst. Nu werden er wel voorbeelden gegeven maar daar werd heel snel doorheen gegaan en diende meer als voorbeeldje dan dat er aan de hand daarvan uitgelegd werd.
 
 
+**maandag 16 maart**
+
+Wat heb ik vandaag gedaan?
+
+In de presentatie vrijdag gaf ik aan dat ik liever individuele error messages heb, zodat het duidelijk is wat fout gaat. Victor gaf mij de tip om op MDN te kijken bij validityState. Vandaag is het gelukt om individuele validatie te fixen, dus daar ben ik blij mee. Ik moest best wel een aantal dingen veranderen hieraan.
+Ik heb een tweede pattern toegevoegd en deze is af. Ik moet deze nog wel checken op validity, maar denk dat dit goed gaat met mijn huidige JavaScript. Omdat deze me vrij goed afging, wil ik morgen nog een pattern toevoegen. 
+
+
+Hoeveel tijd heeft dit me gekost?
+
+5 uur totaal.
+2 uur validiteit oplossen.
+1 uur tweede pattern.
+30 min onderzoek doen naar popovers, zodat ik deze zou kunnen gebruiken bij mijn navigatie.
+30 min HTML indeling fixen en nieuwe HTML pagina's toevoegen.
+15 min kijken hoe ik mijn navigatie aan wil passen. Hij zit nu in de form, maar wil hem erbuiten: waar is handig en duidelijk?
+
+
+
+Wat heb ik geleerd?
+
+validityState, innerText en JavaScript.
+
+
+Wat ga ik morgen doen?
+
+Nog een pattern toevoegen, readme bijwerken (wil graag een sectie maken waarin ik mijn keuzes onderbouw), lay-out voor groot scherm oplossen, knop voor volgende en vorige verbeteren.
+
+
 
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern
+https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/typeMismatch
+https://codepen.io/3hos15/pen/PwGGGRM
+https://www.notion.so/Browser-Technology-3-6-30c4a28d1c2c8008a1f6d3a744cb105a?source=copy_link) 
+https://developer.mozilla.org/en-US/docs/Web/API/ValidityState
+https://codepen.io/ASDAFF/pen/GMrXrX
 
