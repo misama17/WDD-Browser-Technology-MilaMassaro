@@ -1,0 +1,6 @@
+/* MARK: Intro text
+/* ---------- SECTION: intro ----------*/
+section:nth-of-type(1) {
+    color: var(--color-text-one);
+    margin: 2em;
+}

@@ -1,0 +1,21 @@
+.s2a-radio {
+  display: flex;
+  flex-direction: column;
+
+  &:has(.checked-2a1:checked) .extra-2a1,
+  &:has(.checked-2a2:checked) .extra-2a2,
+  &:has(.checked-2a3:checked) .extra-2a3 {
+    display: block;
+  }
+  
+  
+  & label:has(input:not(:checked)) {
+    color: var(--color-text-two);
+  }
+}
+
+.extra-2a1,
+.extra-2a2,
+.extra-2a3 {
+  display: none;
+}

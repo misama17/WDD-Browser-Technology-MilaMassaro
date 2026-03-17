@@ -9,6 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/Users/milamassaro/Documents/CMD HVA/Jaar 3/Webdesign & development/MilaMassaro/WDD-Browser-Technology-MilaMassaro/images/imgi_2_nslogo.svg">
 	
 	<link href="styles/style.css" rel="stylesheet">
+    <link href="styles/pagina2.css" rel="stylesheet">
     <script defer src="scripts/script.js"></script>
 
     <title>Browser Technology</title>
@@ -23,57 +24,248 @@
     </a>
     <p>‼️ <strong>Let op:</strong> Dit is een schoolopdracht</p>
 </header>
-<main>  
-	<section>
-        <h1>Belastingaangifte Erfbelasting</h1>
-        <h2>Waarom dit formulier?</h2>
-        <p>Met dit formulier doet u aangifte erfbelasting voor alle personen en instellingen die iets krijgen uit de nalatenschap.</p>
-    </section>
+<main>    
+       
+    <!-- action: naar tweede pagina voor volgende stap sturen. -->
+    <!-- Feedback week 2: niet handig >> andere oplossing zoeken. -->
+    <!-- Feedback week 3: toch wel handiger om meerdere HTML pagina's te maken -->
+    <form action="./pagina3.html">
 
-    <form action="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">1</a>
+                    <p>Gegevens overledene</p>
+                </li>
+                <li>
+                    <a href="./pagina2.html" class="popover">2</a>
+                    <!-- <span class="popover">Gegevens over de aangifte</span> -->
+                </li>
+                <li>
+                    <a href="./pagina3.html" class="popover">3</a>
+                </li>
+            </ul>
+        </nav>
 
+        <!------- 1a: Persoonsgegevens overledene ------->
         <fieldset>
-            <legend>
-                Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet.  
-                Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.
-            </legend>
+            <legend>Persoonsgegevens overledene</legend>
 
-            <fieldset>
-                <legend>Vul 1 van de 3 in: het bsn of RSIN van de gemachtigde, het beconnummer van de adviseur of het protocolnummer van de notaris.</legend>
-                <div class="s2a-radio">
-                    <label for="authorized-data">
-                        <input type="radio" id="authorized-data" name="data" class="checked-2a1">
-                        Bergerservicenummer/RSIN gemachtigde
-                    </label>
+            <fieldset class="name">
+                <legend>Naam overledene</legend>
+                <label for="deceased-initials">
+                    Voorletter(s)
+                    <input type="text" id="deceased-initials" required>
+                </label>
+                <p id="deceased-initials-error" class="error-msg" aria-live="polite"></p>
 
-                    <label for="data-authorized" class="extra-2a1">
-                        <input type="text" for="data-authorized">
-                    </label>
+                <label for="deceased-prefixes">
+                    Tussenvoegsel(s)
+                    <input type="text" id="deceased-prefixes">
+                </label>
 
+                <label for="deceased-surname">
+                    Achternaam
+                    <!-- !! Vraag Gemini: pattern voor minimaal 2 tekens, alleen letters, inclusief vreemde tekens (accenten) en een koppelteken  -->
+                    <!-- Door aria-describedby toe te voegen met eenzelfde id weet de screenreader dat de p bij input hoort (- workshop Victor) -->
+                    <input type="text" id="deceased-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$" required>
+                </label>
+                <p id="deceased-surname-error" class="error-msg" aria-live="polite"></p>
 
-                    <label for="advisor-data">
-                        <input type="radio" id="advisor-data" name="data" class="checked-2a2">
-                        Beconnummer adviseur
-                    </label>
-
-                    <label for="data-advisor" class="extra-2a2">
-                        <input type="text" for="data-advisor">
-                    </label>
-
-
-                    <label for="notary-data">
-                        <input type="radio" id="notary-data" name="data" class="checked-2a3">
-                        Protocolnummer notaris
-                    </label>
-
-                    <label for="data-notary" class="extra-2a3">
-                        <input type="text" for="data-notary">
-                    </label>
-                </div>
-                
             </fieldset>
 
+            <fieldset>
+                <legend>Burgerservicenummer overledene</legend>
+
+                <label for="bsn">
+                    <!-- NOG PATTERN VERBETEREN? -->
+                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern -->
+                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" aria-describedby="errorID" required>
+                </label>
+                <p id="bsn-error" class="error-msg" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="date">
+                <legend>Overlijdensdatum</legend>
+                <!-- AANPASSEN? Misschien value="2026-01-01" invullen, alleen jaartal is niet mogelijk -->
+                <input type="date" name="date-deceased" max="2026-03-01" id="date-of-death" required>
+                <p id="date-of-death-error" class="error-msg" aria-live="polite"></p>
+            </fieldset>
+        </fieldset>
+
+        <!------- 1b: Partner overledene ------->
+        <fieldset>
+            <legend>Partner overledene</legend>
+            <fieldset class="deceased-partner"> 
+                <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+                <div class="s1bcd-radio">
+                    <!-- Is het handig om alvast checked te zetten? > wil dat de rest van 1b pas te zien is als "ja". -->
+                    <!-- FEEDBACK: for en id weg of ingevuld -->
+                    <label for="deceased-married-no">
+                        <input type="radio" id="deceased-married-no" name="deceased-married" required>
+                        Nee
+                    </label>
+                    <label for="deceased-married-yes">
+                        <input type="radio" id="deceased-married-yes" class="checked-1b1" name="deceased-married">
+                        Ja
+                    </label>
+                    <p id="deceased-married-no-error"></p>
+                </div>
+            </fieldset>
+
+            <fieldset class="extra-1b1">
+                <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-registration-no">
+                        <input type="radio" id="deceased-registration-no" name="deceased-registration">
+                        Nee
+                    </label>
+                    <label for="deceased-registration-yes">
+                        <input type="radio" id="deceased-registration-yes" class="checked-1b2" name="deceased-registration">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="extra-1b2">
+                <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-settlement-no">
+                        <input type="radio" id="deceased-settlement-no" name="deceased-settlement">
+                        Nee
+                    </label>
+                    <label for="deceased-settlement-yes">
+                        <input type="radio" id="deceased-settlement-yes" name="deceased-settlement">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="extra-1b2">
+                <legend>Datum huwelijkse of partnerschapsvoorwaarden</legend>
+                <input type="date" name="date-partnership" min="1926-01-01" max="2026-03-01">
+            </fieldset>
 
         </fieldset>
 
-    </form>
+        <!------- 1c: Kinderen overledene ------->
+        <fieldset>
+            <legend>Kinderen overledene</legend>
+
+            <fieldset class="deceased-family">
+                <legend>Had de overledene kinderen?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-children-no">
+                        <input type="radio" id="deceased-children-no" name="deceased-children">
+                        Nee
+                    </label>
+                    <label for="deceased-children-yes">
+                        <input type="radio" id="deceased-children-yes" class="checked-1c1" name="deceased-children">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="extra-1c1">
+                <legend>Is 1 van de kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-child-no">
+                        <input type="radio" id="deceased-child-no" name="deceased-child">
+                        Nee
+                    </label>
+                    <label for="deceased-child-yes">
+                        <input type="radio" id="deceased-child-yes" class="checked-1c2" name="deceased-child">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="extra-1c2">
+                <legend>Had dit overleden kind zelf kinderen?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-child-children-no">
+                        <input type="radio" id="deceased-child-children-no" name="deceased-child-children">
+                        Nee
+                    </label>
+                    <label for="deceased-child-children-yes">
+                        <input type="radio" id="deceased-child-children-yes" name="deceased-child-children">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+        </fieldset>
+
+        <!------- 1d: Testament ------->
+        <fieldset>
+            <legend>Testament overledene</legend>
+
+            <fieldset class="deceased-notary">
+                <legend>Had de overledene een testament?</legend>
+                <div class="s1bcd-radio">
+                    <label for="deceased-testament-no">
+                        <input type="radio" id="deceased-testament-no" name="deceased-testament">
+                        Nee
+                    </label>
+                    <label for="deceased-testament-yes">
+                        <input type="radio" id="deceased-testament-yes" class="checked-1d1" name="deceased-testament">
+                        Ja
+                    </label>
+                </div>
+            </fieldset>
+
+            <!------- 1d: Gegevens notaris ------->
+            <fieldset class="extra-1d1">
+                <legend>Gegevens notaris</legend>
+
+                <fieldset>
+                    <legend>Protocolnummer notaris</legend>
+                    <!-- HOE MOET IK HET PATTERN INSTELLEN HIERVOOR? -->
+                    <label for="protocolnumber">
+                        <input minlength="6" maxlength="6" type="text" id="protocolnumber" pattern="[0-9]{6}">
+                    </label>
+                </fieldset>
+
+                <fieldset class="name">
+                    <legend>Naam notaris</legend>
+                    <label for="notary-initials">
+                        Voorletter(s)
+                        <input type="text" id="notary-initials">
+                    </label>
+                    <label for="notary-prefixes">
+                        Tussenvoegsel(s)
+                        <input type="text" id="notary-prefixes">
+                    </label>
+                    <label for="notary-surname">
+                        Achternaam
+                        <input type="text" id="notary-surname" pattern="[a-zA-ZÀ-ÿ]{2,}$">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vestigingsplaats</legend>
+                    <label for="notary-place">
+                        <input type="text" id="notary-place">
+                    </label>
+                </fieldset>
+
+                <fieldset class="date">
+                    <legend>Datum van het testament of van de laatste wijziging</legend>
+                    <input type="date" name="date-testament" min="1926-01-01" max="2026-03-01">
+                </fieldset>
+
+            </fieldset>
+
+        </fieldset>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="previous-button">Vorige</a>
+            <button type="submit">Volgende</button>
+        </div>
+        
+    </form>  
+
+</main>  
+</body>
+	
+</html>

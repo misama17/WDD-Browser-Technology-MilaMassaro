@@ -95,15 +95,6 @@ h2 {
 
 
 
-/* MARK: Intro text
-/* ---------- SECTION: intro ----------*/
-section:nth-of-type(1) {
-    color: var(--color-text-one);
-    margin: 2em;
-}
-
-
-
 
 
 /* MARK: Form
@@ -214,11 +205,6 @@ input {
     padding: .5em;
     margin: .5em 0;
 
-    /* !! ChatGPT gevraagd hoe ik de kleur van de radiobutton aan kon passen */
-    /* &[type=radio] {
-        accent-color: var(--color-accent-one);
-    } */
-
     &[type=date] {
         width: 100%;
         font-family: 'NS Sans Regular', Arial, Helvetica, sans-serif;
@@ -239,86 +225,14 @@ input {
     }
 }
 
-.s1bcd-radio {
-    & input[type="radio"] {
-        display: none;
-    }
 
-    & label {
-    display: inline-block;
-    padding: 1em 4em;
-    margin: 1em .5em 1em 0;
-    gap: 2em;
-
-    border: .5px solid var(--color-text-two);
-    border-radius: 8px;
-
-    color: var(--color-text-one);
-
-    &:hover {
-        background-color: var(--color-opacity-one);
-    }
-
-    &:has(input:checked) {
-        border: 2px solid var(--color-background-one);
-    }
-
-    &:has(input:not(:checked)) {
-        color: var(--color-text-two);
-    }
-    }
-} 
-
-
-
-
-
-
-/* MARK: Openklappen vragen (progressive disclosure)
-/* ---------- Progressive disclosure 1b ---------- */
-.extra-1b1, .extra-1b2 {
-    display: none;
-}
-
-/* Vraag aan ChatGPT: hoe kan ik een element dat na de fieldset komt in de HTML aanspreken? */
-/* >> met "~ .extra-1b1" pak je alle elementen die op hetzelfde niveau staan en na fieldset komen */
-fieldset.deceased-partner:has(.checked-1b1:checked) ~ .extra-1b1 {
-    display: block;
-}
-
-/* Voorwaarde: als zowel ja bij de eerste vraag, als bij de tweede vraag is geselecteerd. */
-fieldset.deceased-partner:has(.checked-1b1:checked) ~ fieldset.extra-1b1:has(.checked-1b2:checked) ~ .extra-1b2 {
-    display: block;
-}
-
-/* ---------- Progressive disclosure 1c ---------- */
-.extra-1c1, .extra-1c2 {
-    display: none;
-}
-
-fieldset.deceased-family:has(.checked-1c1:checked) ~ .extra-1c1 {
-    display: block;
-}
-
-fieldset.deceased-family:has(.checked-1c1:checked) ~ fieldset.extra-1c1:has(.checked-1c2:checked) ~ .extra-1c2 {
-    display: block;
-}
-
-/* ---------- Progressive disclosure 1d ---------- */
-.extra-1d1 {
-    display: none;
-}
-
-fieldset.deceased-notary:has(.checked-1d1:checked) ~ .extra-1d1 {
-    display: block;
-}
 
 
 
 
 /* MARK: Validity
 /* ---------- Name ---------- */
-/* Direct op input geplaatst: pattern klopt niet? dan GELIJK melding */
+/* Direct op input geplaatst: pattern klopt niet? dan GELIJK melding (dus werkt ook zonder JS) */
  input:user-invalid {
     background-color: var(--color-opacity-two);
  }
@@ -328,7 +242,6 @@ input[aria-invalid="true"] {
     border-left-width: 6px;
 }
 
-/* VRAAG: beter groene kleur geven of terug naar origineel laten gaan? */
 input[aria-invalid="false"] {
     border: .5px solid var(--color-background-one);
 }
@@ -348,9 +261,26 @@ input[aria-invalid="false"] {
 
 
 
+/* MARK: a/button
+/* ---------- PREVIOUS BUTTON ---------- */
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.previous-button {
+    text-decoration: none;
+    background-color: var(--color-accent-one);
+    color: var(--color-text-three);
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 1em auto;
+}
 
 
-/* MARK: POPOVER
+/* MARK: popover
 /* ---------- NAV ---------- */
 /* .popover {
     position: absolute;
