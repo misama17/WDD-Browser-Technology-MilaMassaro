@@ -63,6 +63,8 @@ body {
 
 header {
     background-color: var(--color-background-one);
+    position: sticky;
+    top: 0;
 
     & p {
         color: var(--color-accent-two);
@@ -112,7 +114,6 @@ form nav {
     background-color: var(--color-background-three);
 
     width: 100%;
-    margin: 1em auto;
     padding: 2em;
 
     & ul {
@@ -209,8 +210,9 @@ input {
     border-radius: 5px;
 
     /* FEEDBACK: kleur is misschien slecht te zien > kijk op NS. */
-    border: .5px solid var(--color-background-one);
+    border: .5px solid var(--color-accent-one);
     padding: .5em;
+    margin: .5em 0;
 
     /* !! ChatGPT gevraagd hoe ik de kleur van de radiobutton aan kon passen */
     /* &[type=radio] {
@@ -234,7 +236,6 @@ input {
 
     & input {
         display: block;
-        margin: .5em 0;
     }
 }
 
@@ -337,5 +338,33 @@ input[aria-invalid="false"] {
 /* ---------- Foutmelding ---------- */
 .error-msg {
     color: var(--color-accent-two);
-    margin: .5em 0;
+    margin: 0;
+    margin-bottom: 1em;
+
+    &:empty {
+        display: none;
+    }
 }
+
+
+
+
+
+/* MARK: POPOVER
+/* ---------- NAV ---------- */
+/* .popover {
+    position: absolute;
+    background-color: red;
+    display: none;
+    z-index: 4;
+
+    &:before {
+        content: '';
+        display: absolute;
+    }
+
+    &:hover {
+        display: block;
+        z-index: 10;
+    }
+} */
