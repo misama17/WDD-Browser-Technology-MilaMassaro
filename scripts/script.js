@@ -54,8 +54,7 @@ form.addEventListener('submit', event => {
             // VRAAG: Hoe naar bovenste foute input?
             input.focus()
 
-        }
-         else {
+        } else {
             errorMsg("", input.id)
             input.setAttribute("aria-invalid", "false")
             input.removeAttribute("aria-describedby")
@@ -79,3 +78,18 @@ inputs.forEach(input => {
 
 
 // MARK: Radio buttons
+const inputsRadio = form.querySelectorAll("input[type=radio]")
+
+function addRequired() {
+    
+
+    inputs.forEach(input => {
+        if(isVisible) {
+            input.setAttribute("required", "")
+        } else {
+            input.removeAttribute("required", "")
+        }
+    })
+}
+
+addRequired()

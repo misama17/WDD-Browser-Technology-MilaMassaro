@@ -1,13 +1,26 @@
+/* MARK: Open input text
+/* ---------- 1 VAN 3 ---------- */
 .s2a-radio {
   display: flex;
   flex-direction: column;
+
+  & label:nth-child(odd) {
+    margin-top: 1.5em;
+
+    &:has(input:checked) {
+        color: var(--color-text-one);
+    }
+
+    &:has(input:not(:checked)) {
+        color: var(--color-text-two);
+    }
+  }
 
   &:has(.checked-2a1:checked) .extra-2a1,
   &:has(.checked-2a2:checked) .extra-2a2,
   &:has(.checked-2a3:checked) .extra-2a3 {
     display: block;
   }
-  
   
   & label:has(input:not(:checked)) {
     color: var(--color-text-two);

@@ -1,6 +1,61 @@
 /* MARK: Intro text
 /* ---------- SECTION: intro ----------*/
 section:nth-of-type(1) {
+    margin: 0 2em;
+    background-color: var(--color-background-two);
     color: var(--color-text-one);
-    margin: 2em;
+    border-radius: 0 0 10px 10px;
+
+    max-height: 70vh;
+    overflow-y: auto;
+
+    line-height: 1.2;
+
+    & h2 {
+        margin: 2em 0 1em 0;
+        padding: 0 1em;
+
+        &:nth-of-type(1) {
+            margin: 1em 0;
+        }
+    }
+
+    & ul:nth-of-type(2) {
+        padding: 0 2em;
+
+        & li {
+            margin: .5em 0;
+        }
+    }
+
+    & > p {
+        margin: .5em 0;
+        padding: 0 1.5em;
+
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
+    }
+}  
+
+
+
+/* MARK: Start
+/* ---------- START BUTTON ----------*/
+.start-button {
+    text-decoration: none;
+    color: var(--color-text-three);
+    background-color: var(--color-accent-one);
+    padding: 1em 1.5em;
+    margin: 1em;
+    margin-left: auto;
+    width: max-content;
+    border-radius: 5px;
+    border: none;
+    display: block;
+
+    &:hover {
+        background-color: var(--color-background-one);
+        color: var(--color-text-one); 
+    }
 }

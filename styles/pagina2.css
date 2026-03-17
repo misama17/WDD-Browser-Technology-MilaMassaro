@@ -4,27 +4,27 @@
     }
 
     & label {
-    display: inline-block;
-    padding: 1em 4em;
-    margin: 1em .5em 1em 0;
-    gap: 2em;
+        display: inline-block;
+        padding: 1em 3em;
+        margin: 1em .5em 1em 0;
+        gap: 2em;
 
-    border: .5px solid var(--color-text-two);
-    border-radius: 8px;
+        border: .5px solid var(--color-text-two);
+        border-radius: 8px;
 
-    color: var(--color-text-one);
+        color: var(--color-text-one);
 
-    &:hover {
-        background-color: var(--color-opacity-one);
-    }
+        &:hover {
+            background-color: var(--color-opacity-one);
+        }
 
-    &:has(input:checked) {
-        border: 2px solid var(--color-background-one);
-    }
+        &:has(input:checked) {
+            border: 3px solid var(--color-accent-one);
+        }
 
-    &:has(input:not(:checked)) {
-        color: var(--color-text-two);
-    }
+        &:has(input:not(:checked)) {
+            color: var(--color-text-two);
+        }
     }
 } 
 

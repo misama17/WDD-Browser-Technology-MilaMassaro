@@ -25,27 +25,28 @@
     <p>‼️ <strong>Let op:</strong> Dit is een schoolopdracht</p>
 </header>
 <main>    
-       
+    <h1>Aangifte Erfbelasting</h1>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">1</a>
+            </li>
+            <li>
+                <a href="./pagina2.html" class="popover">2</a>
+                <p>Gegevens overledene</p>
+                <!-- <span class="popover">Gegevens over de aangifte</span> -->
+            </li>
+            <li>
+                <a href="./pagina3.html" class="popover">3</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- action: naar tweede pagina voor volgende stap sturen. -->
     <!-- Feedback week 2: niet handig >> andere oplossing zoeken. -->
     <!-- Feedback week 3: toch wel handiger om meerdere HTML pagina's te maken -->
     <form action="./pagina3.html">
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">1</a>
-                    <p>Gegevens overledene</p>
-                </li>
-                <li>
-                    <a href="./pagina2.html" class="popover">2</a>
-                    <!-- <span class="popover">Gegevens over de aangifte</span> -->
-                </li>
-                <li>
-                    <a href="./pagina3.html" class="popover">3</a>
-                </li>
-            </ul>
-        </nav>
 
         <!------- 1a: Persoonsgegevens overledene ------->
         <fieldset>
@@ -80,7 +81,7 @@
                 <label for="bsn">
                     <!-- NOG PATTERN VERBETEREN? -->
                     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern -->
-                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" aria-describedby="errorID" required>
+                    <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}" required>
                 </label>
                 <p id="bsn-error" class="error-msg" aria-live="polite"></p>
             </fieldset>
@@ -124,6 +125,7 @@
                         <input type="radio" id="deceased-registration-yes" class="checked-1b2" name="deceased-registration">
                         Ja
                     </label>
+                    <p id="deceased-registration-no-error"></p>
                 </div>
             </fieldset>
 
