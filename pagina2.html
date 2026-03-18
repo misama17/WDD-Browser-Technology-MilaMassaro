@@ -110,7 +110,7 @@
                         <input type="radio" id="deceased-married-yes" class="checked-1b1" name="deceased-married">
                         Ja
                     </label>
-                    <p id="deceased-married-no-error"></p>
+                    <p id="deceased-married-no-error" class="error-msg" aria-live="polite"></p>
                 </div>
             </fieldset>
 
@@ -118,7 +118,7 @@
                 <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-registration-no">
-                        <input type="radio" id="deceased-registration-no" name="deceased-registration">
+                        <input type="radio" id="deceased-registration-no" name="deceased-registration" class="extra">
                         Nee
                     </label>
                     <label for="deceased-registration-yes">
@@ -158,7 +158,7 @@
                 <legend>Had de overledene kinderen?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-children-no">
-                        <input type="radio" id="deceased-children-no" name="deceased-children">
+                        <input type="radio" id="deceased-children-no" name="deceased-children" required>
                         Nee
                     </label>
                     <label for="deceased-children-yes">
@@ -206,7 +206,7 @@
                 <legend>Had de overledene een testament?</legend>
                 <div class="s1bcd-radio">
                     <label for="deceased-testament-no">
-                        <input type="radio" id="deceased-testament-no" name="deceased-testament">
+                        <input type="radio" id="deceased-testament-no" name="deceased-testament" required>
                         Nee
                     </label>
                     <label for="deceased-testament-yes">

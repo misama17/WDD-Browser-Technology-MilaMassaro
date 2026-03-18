@@ -78,18 +78,104 @@ inputs.forEach(input => {
 
 
 // MARK: Radio buttons
-const inputsRadio = form.querySelectorAll("input[type=radio]")
 
-function addRequired() {
-    
+// function conditionalFieldsets(text, id) {
+//     const yesRadio = document.getElementById(id+"-yes")
 
-    inputs.forEach(input => {
-        if(isVisible) {
-            input.setAttribute("required", "")
-        } else {
-            input.removeAttribute("required", "")
-        }
-    })
-}
+//     console.log(yesRadio)
 
-addRequired()
+//     if (yesRadio) {
+//         yesRadio.innerText = text;
+//     }
+// }
+
+// conditionalFieldsets()
+
+
+// const inputsRadio = form.querySelectorAll("input[type=radio]")
+// const yesRadio = document.getElementById(input.id+"-yes")
+
+// function addRequired() {
+//     if (yesRadio.checked) {
+//         input.setAttribute("required", "true")
+//     }
+// }
+
+// addRequired()
+
+
+// form.addEventListener('submit', event => { 
+//     const yesRadios = document.getElementById(id+"-yes")
+
+//     yesRadios.forEach(yesRadio => {
+//         const fieldset = yesRadio.closest("fieldset")
+
+//         if (!fieldset) return
+
+//         const nextFieldset = fieldset.nextElementSibling
+
+//         if(!nextFieldset) return;
+
+//         if (yesRadio.checked) {
+//             input.setAttribute("required", "true")
+//         } else {
+//             input.removeAttribute("required")
+//         }
+//     })
+
+//     console.log(yesRadio)
+// })
+
+
+
+// form.addEventListener('submit', event => { 
+//     const yesRadios = document.getElementById("deceased-married-yes")
+
+//     yesRadios.forEach(yesRadio => {
+//         const fs = yesRadio.closest("fieldset")
+//     })
+
+//     if (yesRadio) {
+//         let next = yesRadio.closest("fieldset").nextElementSibling
+
+//         if (next) {
+//             const input = next.querySelector("input")
+
+//             if (yesRadio.checked) {
+
+//                 input.setAttribute("required", "true")
+//             } else {
+//                 input.removeAttribute("required")
+//             }
+//         }
+//     }
+// })
+
+form.addEventListener('submit', event => { 
+    const yesRadio = document.getElementById("deceased-married-yes")
+    const extraFieldset = document.querySelector(".extra")
+
+    if(yesRadio.checked) {
+        extraFieldset.setAttribute("required", "true")
+    } else {
+        extraFieldset.removeAttribute("required")
+    }
+})
+
+
+
+
+
+// function addRequired() {
+//     let fieldset = input.classList.contains("--extra")
+
+//     inputs.forEach(input => {
+//         if(isVisible) {
+//             input.setAttribute("required", "")
+//         } else {
+//             input.removeAttribute("required", "")
+//         }
+//     })
+// }
+
+// addRequired()
