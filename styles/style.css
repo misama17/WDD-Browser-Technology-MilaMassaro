@@ -195,7 +195,6 @@ fieldset {
 input {
     border-radius: 5px;
 
-    /* FEEDBACK: kleur is misschien slecht te zien > kijk op NS. */
     border: .5px solid var(--color-accent-one);
     padding: .5em;
     margin: .5em 0;
