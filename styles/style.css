@@ -25,6 +25,7 @@ html, body {
     --color-opacity-one:light-dark(#0063D326, #0063D380);
     --color-opacity-two:light-dark(#DB002826, #DB002826);
     --color-input:light-dark(#FFFFFF, #4D4D50);
+    --color-nav:light-dark(#6A6A7A,#4D4D50);
 }
 
 
@@ -75,6 +76,7 @@ header {
         color: var(--color-accent-two);
         background-color: var(--color-background-two);
         padding: 1em;
+        text-transform: uppercase;
     }
 
     & p strong {
@@ -131,7 +133,7 @@ nav {
         }
 
         & a {
-            background-color: var(--color-input);
+            background-color: var(--color-nav);
             color: var(--color-text-three);
             display: flex;
             justify-content: center;
@@ -139,7 +141,6 @@ nav {
 
             width: 2em;
             height: 3em;
-            aspect-ratio: 1;
             text-decoration: none;
             border-radius: 5px;
 
@@ -297,21 +298,24 @@ input[aria-invalid="false"] {
 }
 
 
-/* MARK: popover
-/* ---------- NAV ---------- */
-/* .popover {
-    position: absolute;
-    background-color: red;
-    display: none;
-    z-index: 4;
-
-    &:before {
-        content: '';
-        display: absolute;
+@media screen and (min-width: 48em) {
+    main {
+        display: grid;
+        place-content:center;
     }
 
-    &:hover {
-        display: block;
-        z-index: 10;
+    form {
+        width: clamp(50em, 60vw, 55em);
     }
-} */
+
+    nav {
+        width: clamp(50em, 60vw, 55em);
+
+        & ul {
+            gap: 1em;
+            & li a {
+                width: 4em;
+            }
+        }
+    }
+}
