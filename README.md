@@ -257,13 +257,61 @@ Nog een pattern toevoegen, readme bijwerken (wil graag een sectie maken waarin i
 
 
 
+**dinsdag 16 maart**
+
+_Ik heb deze check-out op woensdag met Kelly gedaan (na de check-out voor CSS), omdat ik naar de dierenarts moest en dus een kwartier eerder wegging_
+
+Wat heb ik vandaag gedaan?
+
+Ik heb gister een pattern toegevoegd dat je één van de drie moest selecteren en dan met progressive disclosure de input laten zien. Deze had ik nog wat aangepast, zodat hij meer bij de stijl van de rest hoorde, maar hierdoor werd het heel onduidelijk dat er een input veld bij kwam. De radiobuttons had ik namelijk zo vormgegeven dat ze leken op de ja/nee radiobuttons, maar hierdoor leken ze ook heel erg op de inputvelden. Dus ik heb ze weer terug veranderd. Omdat dit pattern naar mijn gevoel redelijk goed ging, ben ik begonnen aan nog een pattern van het toevoegen van verkrijgers. Hier moest ik wel wat javascript voor gebruiken, dus die moet ik donderdag nog even afmaken. Hopelijk lukt dat zonder hulp.
+Ik heb een introductiepagina gemaakt waarin context gegeven wordt en wat de gebruiker nodig heeft bij het formulier etc.
+Ik heb de navigatie (process balk) buiten mijn form geplaatst, omdat dit veel beter is met een screenreader. Ik heb de navigatie ook aangepast zodat hij op klein scherm past.
+Ik heb eigenlijk de hele structuur van mijn bestanden aangepast. Ik heb nu meerdere HTML pagina's en meerdere CSS pagina's. Zo is het meer geordend wat bij wat hoort. Dit kostte best wel wat moeite, maar is het wel waard om het overzichtelijk te houden.
+Ik heb een "controleer uw gegevens" pagina toegevoegd.
+Ik heb een "uw formulier is goed verzonden" pagina toegevoegd.
+Ik heb geprobeerd om het gehele proces van een formulier invullen gebruiksvriendelijk is, daar heb ik aandacht aan besteed vandaag. Ik heb gebruik gemaakt van aantekeningen van de weekly nerd van de week ervoor.
+Ik moest de error-message en validatie nog even werkend maken voor de radio-buttons (ja/nee). Ik heb een tijd geprobeerd om met javascript te fixen dat als ik op "ja" klik dan de volgende fieldset input required moet worden. Ik kwam hiervoor niet tot een goede oplossing. Ik heb het werkend gekregen met classes en die aanroepen, maar dat zou heel omslachtig zijn als ik dat voor elke fieldset zou moeten doen. Ik had het daarvoor geprobeerd met nextElementSibling, maar dat zou betekenen dat je de HTML niet meer aan zou kunnen passen, dus dat leek me ook niet handig. Ik heb ook overwogen om in javascript te zeggen "als de fieldset display=none heeft, dan moet als de radio button ervoor "ja" checked is de display=block worden"... Maar dat was ook wat omslachtig. Uiteindelijk heb ik besloten om dit gedeelte uit mijn javascript te halen. In mijn notion (zie link bovenaan) zijn mijn experimenten hiermee te zien. 
+
+
+
+Hoeveel tijd heeft dit me gekost?
+
+5 uur totaal.
+2 uur validiteit oplossen.
+1 uur tweede pattern.
+30 min onderzoek doen naar popovers, zodat ik deze zou kunnen gebruiken bij mijn navigatie.
+30 min HTML indeling fixen en nieuwe HTML pagina's toevoegen.
+15 min kijken hoe ik mijn navigatie aan wil passen. Hij zit nu in de form, maar wil hem erbuiten: waar is handig en duidelijk?
+
+
+
+Wat heb ik geleerd?
+
+validityState, innerText en JavaScript.
+
+
+Wat ga ik morgen doen?
+
+Nog een pattern toevoegen, readme bijwerken (wil graag een sectie maken waarin ik mijn keuzes onderbouw), lay-out voor groot scherm oplossen, knop voor volgende en vorige verbeteren.
+
+
+
 ## BRONNENLIJST
 
 https://www.silocreativo.com/en/progressive-disclosure-with-css/
+
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern
+
 https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/typeMismatch
+
 https://codepen.io/3hos15/pen/PwGGGRM
+
 https://www.notion.so/Browser-Technology-3-6-30c4a28d1c2c8008a1f6d3a744cb105a?source=copy_link) 
+
 https://developer.mozilla.org/en-US/docs/Web/API/ValidityState
+
 https://codepen.io/ASDAFF/pen/GMrXrX
+
+https://www.belastingdienst.nl/wps/wcm/connect/nl/erfbelasting/erfbelasting
+
 
