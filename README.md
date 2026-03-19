@@ -307,6 +307,17 @@ Bij de feedback ronde van de afgelopen twee weken merkte ik dat ik best goed doo
 Wat ik wel merkte deze week is dat JavaScript nog lastig voor mij is soms. Ik raak soms best in de war van alle verschillende termen. Als ik het dan teruglees (bijvoorbeeld in workshops of bij uitleg) dan begrijp ik wat er staat, maar als het mij gevraagd zou worden om het on the spot te bedenken, dan vind ik dat nog lastig soms. Niet omdat ik de kennis niet heb (of nou ja soms wel natuurlijk), maar vooral omdat ik gewoon een beetje chaotisch in mijn hoofd wordt en even het overzicht niet meer heb. Maar daarvoor is deze Minor natuurlijk om dit beter onder de knie te krijgen.
 
 
+## ALGEMENE REFLECTIE
+
+Ik vond dit toch wel een lastig vak, omdat je na moet denken over zo veel verschillende dingen. In het begin merkte ik dan ook dat ik een beetje overweldigd werd hierdoor en het moeilijk vond om het overzicht te bewaren. Uiteindelijk toen ik dingen op ging schrijven, merkte ik wel dat het beter ging. Het werkte beter als ik me op 1 ding ging focussen per keer en deze eerst afrondde. 
+Iets anders dat ik lastig vond bij dit vak was dat ik voor mijn gevoel niet heel "creatief" kon zijn. Bij mijn vorige minor ging alles juist om creatief zijn dus ik vond het best een beetje een switch hiernaartoe. Ik had ook allerlei schetsen gemaakt hoe ik het nou leuker en creatiever kon vormgeven allemaal (zie schetsen in notion), zeker op groot scherm, maar uiteindelijk heb ik ervoor gekozen deze niet te gebruiken. Zo was ik bijvoorbeeld van plan om rechts het formulier te hebben en dan links de uitleg/context (die ik nu op de introductiepagina heb), maar ik had besloten dat ik echt een introductiepagina wilde, omdat dit op mobiel formaat echt veel prettiger zou zijn. Anders had je de introductie erboven en moest je ver scrollen, leek mij niet fijn en een beetje too much informatie tegelijk. 
+Ik vind  het jammer dat de popover niet meer is gelukt, maar ik ben blij met hoe ver ik ben gekomen en dat het een geheel is geworden.
+
+
+
+## ONDERBOUWDING KEUZES
+Zie mijn NOTION!!! link is bovenaan te vinden.
+
 
 ## BRONNENLIJST
 
