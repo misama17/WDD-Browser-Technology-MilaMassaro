@@ -67,3 +67,15 @@ fieldset.deceased-family:has(.checked-1c1:checked) ~ fieldset.extra-1c1:has(.che
 fieldset.deceased-notary:has(.checked-1d1:checked) ~ .extra-1d1 {
     display: block;
 }
+
+
+
+
+
+/* MARK: BIGGER SCREEN
+/* ------ groot scherm media query ----- */
+@media screen and (min-width: 48em) {
+    form {
+        width: clamp(50em, 60vw, 55em);
+    }
+}

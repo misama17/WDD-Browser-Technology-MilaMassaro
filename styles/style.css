@@ -298,14 +298,12 @@ input[aria-invalid="false"] {
 }
 
 
+/* MARK: BIGGER SCREEN
+/* ------ groot scherm media query ----- */
 @media screen and (min-width: 48em) {
     main {
         display: grid;
         place-content:center;
-    }
-
-    form {
-        width: clamp(50em, 60vw, 55em);
     }
 
     nav {

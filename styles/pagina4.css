@@ -63,3 +63,14 @@
     font-size: 1.5em;
     font-family: 'NS Sans Bold', Arial, Helvetica, sans-serif;
 }
+
+
+
+
+/* MARK: BIGGER SCREEN
+/* ------ groot scherm media query ----- */
+@media screen and (min-width: 48em) {
+    form {
+        width: clamp(50em, 60vw, 55em);
+    }
+}
