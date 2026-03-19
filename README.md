@@ -6,7 +6,7 @@
 Link naar mijn Notion: https://www.notion.so/Minor-Webdesign-Development-2fd4a28d1c2c8004a247e9f0794a6be0?source=copy_link 
 
 
-### WEEK 3
+### WEEK 1
 
 **maandag 16 feb**
 
@@ -69,7 +69,7 @@ Morgen start weer een nieuw vak, dus afhankelijk van die kick-off...
 _Ik had vandaag mijn check-out met Matthew en hij had min of meer hetzelfde als ik: hij was begonnen met CSS en had de HTML min of meer compleet. Wel merkte ik dat onze dingen erg op elkaar leken en dat vond ik een beetje stom. Dus daarna heb ik wat inspiratie opgedaan hoe ik het net wat unieker kan vormgeven. Ik moet wel even checken in hoeverre dit mag ivm de huisstijl van de NS_ 
 
 
-## REFLECTIE: WEEK 3
+## REFLECTIE: WEEK 1
 
 Ik vond het een prettig begin van de week. Ik kan de colleges goed volgen. Het was best wel nieuwe informatie voor mij, omdat ik eigenlijk nooit een form heb gebruikt. Maar ik begreep wat er werd uitgelegd. Ik vond het prettig om eerst het formulier te printen en erbij op te schrijven wat alle onderdelen zijn. Hierdoor had ik wat meer overzicht in mijn hoofd voordat ik met HTML begon. 
 Toen ik begon met HTML merkte ik dat ik veel kleine vragen had, specifieke vragen. Deze heb ik direct gesteld of even als commentaar opgeschreven zodat ik ze niet vergat en later kon vragen. Hier was de ruimte voor tijdens de workshop op dinsdag. Ik vond het prettig om de gelegenheid te krijgen om onderwerpen te noemen die je graag zou willen bespreken of vragen over had. Wel merkte ik dat deze workshop meer inging op de mogelijkheden en het concept, en wat minder op hoe maak je dit nou met coderen dan eerdere workshops. Ik vind het soms lastig om te weten hoe ik aan iets moet beginnen, waar ik informatie kan vinden etc... Voor mij werkt visueel leren het beste, dus soms heb ik bij deze minor hier wel wat moeite mee merk ik.
@@ -85,7 +85,7 @@ Ik vind het interessant om me te verdiepen in user experience, dus ben benieuwd 
 
 
 
-### WEEK 4
+### WEEK 2
 
 **maandag 2 maart**
 
@@ -148,12 +148,13 @@ Morgen is het andere vak CSS.
 _Vandaag had ik mijn check-out met Rafi. Hij is vandaag vooral bezig geweest met styling. Hij had het gevoel dat hij achterliep en dat hij best wel in moest komen na de vakantie. Daar kon ik mij helemaal in vinden. En het was wel fijn te horen dat ik daar niet alleen in was._
 
 
-## REFLECTIE: WEEK 4
+## REFLECTIE: WEEK 2
 
 De laatste zondag van de vakantie (en eigenlijk de hele vakantie) keek ik echt enorm op tegen de minor. Het gaf me zo veel druk, waardoor ik het eigenlijk niet meer wilde doen als ik eerlijk ben... Ik ben altijd iemand die heel hard werkt voor alles en altijd een extra stapje doet. Ik ben niet bang om hard te werken zeg maar. Alleen met deze minor tot nu toe kijk ik er tegenop. Ik probeer dingen nu van dag tot dag te bekijken, zodat het als een minder grote opgave voelt. Maar ik vind het lastig om enthousiast te zijn.
 Wat betreft het vak BT geeft het me aan de ene kant rust dat ik niet allemaal fancy CSS dingen hoef te doen, maar aan de andere kant merk ik ook aan hoe veel je moet denken als je echt een goed formulier wilt maken. Dan hoor ik weer studiegenoten erover praten hoe zij dingen oppakken en dat zit me eigenlijk alleen maar in de weg, want daardoor ga ik denken oh ik moet nog veel te veel doen. Ook het houden van presentaties en de check-outs vind ik eigenlijk heel vervelend. Niet omdat ik bang ben om mijn werk te laten zien, maar omdat ik heel erg zie wat andere doen en ik daarmee het besef krijg hoe veel ik nog moet doen. Terwijl iedereen zijn "eigen weg" heeft en ik weet dat ik er ook wel kom. Maar door die presentaties steeds krijg ik het gevoel dat het niet goed gaat en dat vind ik eerlijk gezegd best wel vervelend.
 
 
+## WEEK 3
 
 **maandag 9 maart**
 
@@ -221,11 +222,13 @@ _nav buiten form plaatsen. Pas naar volgende pagina als alles ingevuld is?_
 
 
 
-## REFLECTIE: WEEK 5
+## REFLECTIE: WEEK 3
 
 Deze week ging het beter. Ik was rustiger in mijn hoofd, waardoor het ook makkelijker werd om dingen echt uit te voeren. De weken hiervoor zat ik zo erg in mijn hoofd van ik moet hier nog aan denken en hier nog aan denken, waardoor ik eigenlijk een beetje bevroor en voor mijn gevoel niet verder kwam. En dit gaf me weer stress. Maar deze week bekeek ik het echt van onderdeel tot onderdeel. Dus eerst dacht ik oke ik ga me focussen op validatie vandaag. Daarna ga ik verder naar het volgende etc. 
 Op donderdag hadden we een weekly nerd over formulieren. Ik vond dit heel lastig te volgen. Dit kwam denk ik door het tijdstip, maar ook omdat het een beetje eentonig was voor mijn gevoel. Ik ben een visuele leerder, dus ik zie persoonlijk liever voorbeelden met uitleg, dan een dia met tekst. Nu werden er wel voorbeelden gegeven maar daar werd heel snel doorheen gegaan en diende meer als voorbeeldje dan dat er aan de hand daarvan uitgelegd werd.
 
+
+## WEEK 4
 
 **maandag 16 maart**
 
@@ -233,6 +236,7 @@ Wat heb ik vandaag gedaan?
 
 In de presentatie vrijdag gaf ik aan dat ik liever individuele error messages heb, zodat het duidelijk is wat fout gaat. Victor gaf mij de tip om op MDN te kijken bij validityState. Vandaag is het gelukt om individuele validatie te fixen, dus daar ben ik blij mee. Ik moest best wel een aantal dingen veranderen hieraan.
 Ik heb een tweede pattern toegevoegd en deze is af. Ik moet deze nog wel checken op validity, maar denk dat dit goed gaat met mijn huidige JavaScript. Omdat deze me vrij goed afging, wil ik morgen nog een pattern toevoegen. 
+Ik heb nu een navigatie waarbij het onderwerp te zien is vna de vraag waar je nu bent, maar het lijkt me handig om ook op een manier te hebben dat mensen het onderwerp van de volgende/vorige stappen ook kunnen zien. Ik kon ervoor kiezen om overal het tekstje bij te zetten, maar het leek me juist goed voor de duidelijkheid om 1 tekstje te doen zodat duidelijk is bij welke vraag ze zijn (zeker voor op klein scherm). Dus het leek mij een idee om het dan met een popover te doen. Dus daar heb ik mee geexperimenteerd vandaag. 
 
 
 Hoeveel tijd heeft dit me gekost?
@@ -240,7 +244,7 @@ Hoeveel tijd heeft dit me gekost?
 5 uur totaal.
 2 uur validiteit oplossen.
 1 uur tweede pattern.
-30 min onderzoek doen naar popovers, zodat ik deze zou kunnen gebruiken bij mijn navigatie.
+1 uur min onderzoek doen naar en experimenteren met popovers, zodat ik deze zou kunnen gebruiken bij mijn navigatie.
 30 min HTML indeling fixen en nieuwe HTML pagina's toevoegen.
 15 min kijken hoe ik mijn navigatie aan wil passen. Hij zit nu in de form, maar wil hem erbuiten: waar is handig en duidelijk?
 
@@ -276,23 +280,31 @@ Ik moest de error-message en validatie nog even werkend maken voor de radio-butt
 
 Hoeveel tijd heeft dit me gekost?
 
-5 uur totaal.
-2 uur validiteit oplossen.
-1 uur tweede pattern.
-30 min onderzoek doen naar popovers, zodat ik deze zou kunnen gebruiken bij mijn navigatie.
-30 min HTML indeling fixen en nieuwe HTML pagina's toevoegen.
-15 min kijken hoe ik mijn navigatie aan wil passen. Hij zit nu in de form, maar wil hem erbuiten: waar is handig en duidelijk?
-
+6 uur totaal.
+30 min 2e pattern aanpassen.
+1,5 uur intro, controle en is verzonden pagina toevoegen.
+1 uur structuur van bestanden verbeteren.
+1,5 uur validatie error messages en setAttribute required als exra fieldset erbij komt.
+30 min met Sanne javascript doen voor required toevoegen.
+30-60 min derde pattern maken (donderdag verder hiermee)
 
 
 Wat heb ik geleerd?
 
-validityState, innerText en JavaScript.
+JavaScript is echt moeilijk :(, zeker met zo'n uitgebreid formulier...
+Ik heb geleerd over hoe het gehele proces een fijne gebruikerservaring kan zijn.
 
 
 Wat ga ik morgen doen?
 
-Nog een pattern toevoegen, readme bijwerken (wil graag een sectie maken waarin ik mijn keuzes onderbouw), lay-out voor groot scherm oplossen, knop voor volgende en vorige verbeteren.
+Donderdag ga ik mijn ReadMe helemaal updaten en ook mijn keuzes/ontwerpkeuzes er een beetje in proberen te verwerken. Ik ga het responsive maken, light-dark mode toevoegen, derde pattern afmaken.
+
+
+## REFLECTIE: WEEK 4
+
+Op zich ging het deze week best goed. Ik heb veel gedaan. De details afronden kosten best wat werk, dus hier heb ik me op donderdag vooral op gefocust. Ik denk dat het een goed geheel is en in ieder geval de gedachte achter alle keuzes goed is en dat ik die goed kan onderbouwen. Ik ben vrij kritisch op mezelf, maar ik moet ook kijken naar mijn eigen proces. En kijkend naar waar ik begon, welke kennis ik heb, is het denk ik goed gegaan. Het is wel goed dat ik me bewust ben van wat nog beter kan en waar nog kansen liggen. Zo zou de validatie in combinatie met progressive disclosure nog opgelost kunnen worden. 
+Bij de feedback ronde van de afgelopen twee weken merkte ik dat ik best goed door had wat nou wel en niet handig was voor zo'n formulier en ook wat qua vormgeving werkt. Hierdoor kon ik denk ik goede feedback geven op mijn medestudenten, wat fijn was. 
+Wat ik wel merkte deze week is dat JavaScript nog lastig voor mij is soms. Ik raak soms best in de war van alle verschillende termen. Als ik het dan teruglees (bijvoorbeeld in workshops of bij uitleg) dan begrijp ik wat er staat, maar als het mij gevraagd zou worden om het on the spot te bedenken, dan vind ik dat nog lastig soms. Niet omdat ik de kennis niet heb (of nou ja soms wel natuurlijk), maar vooral omdat ik gewoon een beetje chaotisch in mijn hoofd wordt en even het overzicht niet meer heb. Maar daarvoor is deze Minor natuurlijk om dit beter onder de knie te krijgen.
 
 
 
