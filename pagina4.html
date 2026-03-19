@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="icon" type="image/svg+xml" href="/Users/milamassaro/Documents/CMD HVA/Jaar 3/Webdesign & development/MilaMassaro/WDD-Browser-Technology-MilaMassaro/images/imgi_2_nslogo.svg">
+	
+	<link href="styles/style.css" rel="stylesheet">
+    <link href="styles/pagina4.css" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/script4.js"></script>
+
+    <title>Browser Technology</title>
+</head>
+
+<body>
+<header>
+    <a href="#" aria-label="Logo of NS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 20">
+            <path fill="#003082" d="M22.4 9.6a6 6 0 0 0-4-1.6H7.6l4-4h10.2l1 .5 6 5.9a6 6 0 0 0 3.9 1.6h10.8l-4 4H29.4l-1.1-.5Zm3 8.7a6 6 0 0 0 4 1.7H41l10-10L41 0h-5.6l8 8H32.7l-1.1-.4-6-5.9A6 6 0 0 0 21.9 0H10L0 10l10 10h5.6l-8-8h10.8l1.1.4Z"/>
+        </svg>
+    </a>
+    <p>‼️ <strong>Let op:</strong> Dit is een schoolopdracht</p>
+</header>
+<main>  
+    <h1>Aangifte Erfbelasting</h1>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">1</a>
+            </li>
+            <li>
+                <a href="./pagina2.html" class="popover">2</a>
+            </li>
+            <li>
+                <a href="./pagina3.html" class="popover">3</a>
+            </li>
+            <li>
+                <a href="./pagina4.html">4</a>
+                <p>Gegevens verkrijgers</p>
+            </li>
+            <li>
+                <a href="./pagina5.html">5</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <form action="./pagina5.html">
+
+        <fieldset class="s3b-check">
+            <legend>Voor wie doet u aangifte?</legend>
+        
+        <fieldset>
+            <legend>Zijn er verkrijgers voor wie u <strong>geen</strong> aangifte doet?</legend>
+    
+            <div class="s3b-radio">
+                <label for="recipients-no">
+                    <input type="radio" id="recipients-no" name="recipients">
+                    Nee
+                </label>
+
+                <label for="recipients-yes">
+                    <input type="radio" id="recipients-yes" name="recipients" class="checked-3b">
+                    Ja
+                </label>
+            </div>
+        </fieldset>
+        
+        <fieldset class="s3b-extra">
+
+            <fieldset>
+                <legend class="recipient">Verkrijger 1</legend>
+        
+                <fieldset>
+                    <legend>Burgerservicenummer verkrijger</legend>
+
+                    <label for="bsn">
+                        <input minlength="9" maxlength="9" type="text" id="bsn" pattern="[1-9][0-9]{8}">
+                    </label>
+                </fieldset>
+        
+                <fieldset class="name">
+                    <legend>Naam verkrijger</legend>
+                        <label for="recipient1-initials">
+                            Voorletter(s)
+                            <input type="text" id="recipient1-initials">
+                        </label>
+
+                        <label for="recipient1-prefixes">
+                            Tussenvoegsel(s)
+                            <input type="text" id="recipient1-prefixes">
+                        </label>
+
+                        <label for="recipient1-surname">
+                            Achternaam
+                            <input type="text" id="recipient1-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$" required>
+                        </label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="1fortune-no">
+                        <input type="radio" id="1fortune-no" name="fortune">
+                        Nee
+                        </label>
+
+                        <label for="1fortune-yes">
+                        <input type="radio" id="1fortune-yes" name="fortune">
+                        Ja
+                        </label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="1inheritance-no">
+                        <input type="radio" id="1inheritance-no" name="inheritance">
+                        Nee
+                        </label>
+
+                        <label for="1inheritance-yes">
+                        <input type="radio" id="1inheritance-yes" name="inheritance">
+                        Ja
+                        </label>
+                    </div>
+                </fieldset>
+
+            </fieldset>
+            
+
+
+            <fieldset class="recipient-extra">
+                <legend class="recipient">Verkrijger 2</legend>
+        
+                <fieldset>
+                    <legend>Burgerservicenummer verkrijger</legend>
+
+                    <label for="bsn-v2">
+                        <input minlength="9" maxlength="9" type="text" id="bsn-v2" pattern="[1-9][0-9]{8}">
+                    </label>
+                </fieldset>
+        
+                <fieldset class="name">
+                    <legend>Naam verkrijger</legend>
+                        <label for="recipient2-initials">
+                            Voorletter(s)
+                            <input type="text" id="recipient2-initials">
+                        </label>
+
+                        <label for="recipient2-prefixes">
+                            Tussenvoegsel(s)
+                            <input type="text" id="recipient2-prefixes">
+                        </label>
+
+                        <label for="recipient2-surname">
+                            Achternaam
+                            <input type="text" id="recipient2-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$">
+                        </label>
+
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="2fortune-no">
+                            <input type="radio" id="2fortune-no" name="fortune">
+                            Nee
+                        </label>
+
+                        <label for="2fortune-yes">
+                            <input type="radio" id="2fortune-yes" name="fortune">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="2inheritace-no">
+                            <input type="radio" id="2inheritace-no" name="inheritace">
+                            Nee
+                        </label>
+
+                        <label for="2inheritace-yes">
+                            <input type="radio" id="2inheritace-yes" name="inheritace">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+
+            </fieldset>
+
+
+
+
+            <fieldset class="recipient-extra">
+                <legend class="recipient">Verkrijger 3</legend>
+        
+                <fieldset>
+                    <legend>Burgerservicenummer verkrijger</legend>
+
+                    <label for="bsn-v3">
+                        <input minlength="9" maxlength="9" type="text" id="bsn-v3" pattern="[1-9][0-9]{8}">
+                    </label>
+                </fieldset>
+        
+                <fieldset class="name">
+                    <legend>Naam verkrijger</legend>
+                        <label for="recipient3-initials">
+                            Voorletter(s)
+                            <input type="text" id="recipient3-initials">
+                        </label>
+
+                        <label for="recipient3-prefixes">
+                            Tussenvoegsel(s)
+                            <input type="text" id="recipient3-prefixes">
+                        </label>
+
+                        <label for="recipient3-surname">
+                            Achternaam
+                            <input type="text" id="recipient3-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$">
+                        </label>
+
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="3fortune-no">
+                            <input type="radio" id="3fortune-no" name="fortune">
+                            Nee
+                        </label>
+
+                        <label for="3fortune-yes">
+                            <input type="radio" id="3fortune-yes" name="fortune">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="3inheritance-no">
+                            <input type="radio" id="3inheritance-no" name="inheritance">
+                            Nee
+                        </label>
+
+                        <label for="3inheritance-yes">
+                            <input type="radio" id="3inheritance-yes" name="inheritance">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+
+            </fieldset>
+
+
+            <fieldset class="recipient-extra">
+                <legend class="recipient">Verkrijger 4</legend>
+        
+                <fieldset>
+                    <legend>Burgerservicenummer verkrijger</legend>
+
+                    <label for="bsn-v4">
+                        <input minlength="9" maxlength="9" type="text" id="bsn-v4" pattern="[1-9][0-9]{8}">
+                    </label>
+                </fieldset>
+        
+                <fieldset class="name">
+                    <legend>Naam verkrijger</legend>
+                        <label for="recipient4-initials">
+                            Voorletter(s)
+                            <input type="text" id="recipient4-initials">
+                        </label>
+
+                        <label for="recipient4-prefixes">
+                            Tussenvoegsel(s)
+                            <input type="text" id="recipient4-prefixes">
+                        </label>
+
+                        <label for="recipient4-surname">
+                            Achternaam
+                            <input type="text" id="recipient4-surname" pattern="[a-zA-ZÀ-ÿ '\-]{2,}$">
+                        </label>
+
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="4fortune-no">
+                            <input type="radio" id="4fortune-no" name="fortune">
+                            Nee
+                        </label>
+
+                        <label for="4fortune-yes">
+                            <input type="radio" id="4fortune-yes" name="fortune">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Doet deze verkrijger een beroep op diens legitieme portie (wettelijke erfdeel)?</legend>
+                    
+                    <div class="s3b-radio">
+                        <label for="4inheritance-no">
+                            <input type="radio" id="4inheritance-no" name="inheritance">
+                            Nee
+                        </label>
+
+                        <label for="4inheritance-yes">
+                            <input type="radio" id="4inheritance-yes" name="inheritance">
+                            Ja
+                        </label>
+                    </div>
+                </fieldset>
+
+            </fieldset>
+
+            
+            <div class="plus">
+                <button class="plus-button">Voeg verkrijger toe</button>
+            </div>
+        </fieldset>  
+        
+        </fieldset>
+
+
+
+
+        <div class="nav-buttons">
+            <a href="pagina3.html" class="previous-button">Vorige</a>
+            <button type="submit" class="next-button">Volgende</button>
+        </div>
+        
+    </form>
+
+</main>  
+</body>
+	
+</html>

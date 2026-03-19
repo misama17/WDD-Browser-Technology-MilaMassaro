@@ -1,0 +1,65 @@
+.s3b-radio {
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & label {
+        display: inline-block;
+        padding: 1em 3em;
+        margin: 1em .5em 1em 0;
+        gap: 2em;
+
+        border: .5px solid var(--color-text-two);
+        border-radius: 8px;
+
+        color: var(--color-text-one);
+
+        &:hover {
+            background-color: var(--color-opacity-one);
+        }
+
+        &:has(input:checked) {
+            border: 3px solid var(--color-accent-one);
+        }
+
+        &:has(input:not(:checked)) {
+            color: var(--color-text-two);
+        }
+    }
+}
+
+.s3b-extra,
+.plus-botton {
+    display: none;
+}
+
+.s3b-check {
+    &:has(.checked-3b:checked) .s3b-extra {
+        display: block;
+    }
+
+    &:has(.checked-3b:checked) .plus-button {
+        background-color: var(--color-accent-one);
+        color: var(--color-text-three);
+        padding: 1em;
+        border-radius: 5px;
+        border: none;
+        display: block;
+        margin-right: auto;
+
+        &:hover {
+            background-color: var(--color-background-one);
+            color: var(--color-text-one); 
+        }
+    }
+}
+
+.plus {
+    margin: 2em 0 8em 0;
+}
+
+.recipient {
+    padding: 1em 0 0 0;
+    font-size: 1.5em;
+    font-family: 'NS Sans Bold', Arial, Helvetica, sans-serif;
+}

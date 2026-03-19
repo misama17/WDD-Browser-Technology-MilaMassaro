@@ -10,18 +10,23 @@ html, body {
 /* MARK: Colors and fonts 
 /* ---------- COLORS ----------*/
 :root {
-    --color-background-one: #FFC919;
-    --color-background-two: #FDFDFD;
-    --color-background-three: #FFFFFF;
-    --color-background-four: #E6E6E9;
-    --color-text-one: #003082;
-    --color-text-two: #6A6A7A;
-    --color-text-three: #FFFFFF;
-    --color-accent-one: #0063D3;
-    --color-accent-two: #DB0028;
-    --color-opacity-one: #0063D326;
-    --color-opacity-two: #DB002826;
+    color-scheme: light dark;
+
+    --color-background-one:light-dark(#FFC919, #FFC919);
+    --color-background-two:light-dark(#FDFDFD, #252528);
+    --color-background-three:light-dark(#FFFFFF, #252528);
+    --color-background-four:light-dark(#E6E6E9, #343536);
+    --color-text-one:light-dark(#003082, #FFFFFF);
+    --color-text-two:light-dark(#6A6A7A, #FFFFFF);
+    --color-text-three:light-dark(#FFFFFF, #FFFFFF);
+    --color-accent-one:light-dark(#0063D3, #0063D3);
+    --color-accent-two:light-dark(#DB0028, #FF9496);
+    --color-accent-three:light-dark(#3E7F67, #4DCDA5);
+    --color-opacity-one:light-dark(#0063D326, #0063D380);
+    --color-opacity-two:light-dark(#DB002826, #DB002826);
+    --color-input:light-dark(#FFFFFF, #4D4D50);
 }
+
 
 /* ---------- FONTS ----------*/
 @font-face {
@@ -113,7 +118,7 @@ nav {
         display: flex;
         gap: .5em;
         padding: 0;
-
+        place-content: center;
 
         & li {
             list-style-type: none;
@@ -126,7 +131,7 @@ nav {
         }
 
         & a {
-            background-color: var(--color-text-two);
+            background-color: var(--color-input);
             color: var(--color-text-three);
             display: flex;
             justify-content: center;
@@ -193,6 +198,8 @@ input {
     border: .5px solid var(--color-accent-one);
     padding: .5em;
     margin: .5em 0;
+
+    background: var(--color-input);
 
     &[type=date] {
         width: 100%;
@@ -273,7 +280,7 @@ input[aria-invalid="false"] {
     }
 }
 
-form button {
+.next-button {
     background-color: var(--color-accent-one);
     color: var(--color-text-three);
     padding: 1em;
@@ -281,6 +288,7 @@ form button {
     border: none;
     display: block;
     margin-left: auto;
+    text-decoration: none;
 
     &:hover {
         background-color: var(--color-background-one);

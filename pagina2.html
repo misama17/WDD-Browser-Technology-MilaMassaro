@@ -35,10 +35,15 @@
             <li>
                 <a href="./pagina2.html" class="popover">2</a>
                 <p>Gegevens overledene</p>
-                <!-- <span class="popover">Gegevens over de aangifte</span> -->
             </li>
             <li>
                 <a href="./pagina3.html" class="popover">3</a>
+            </li>
+            <li>
+                <a href="./pagina4.html">4</a>
+            </li>
+            <li>
+                <a href="./pagina5.html">5</a>
             </li>
         </ul>
     </nav>
@@ -165,6 +170,7 @@
                         <input type="radio" id="deceased-children-yes" class="checked-1c1" name="deceased-children">
                         Ja
                     </label>
+                    <p id="deceased-children-no-error" class="error-msg" aria-live="polite"></p>
                 </div>
             </fieldset>
 
@@ -213,6 +219,7 @@
                         <input type="radio" id="deceased-testament-yes" class="checked-1d1" name="deceased-testament">
                         Ja
                     </label>
+                    <p id="deceased-testament-no-error" class="error-msg" aria-live="polite"></p>
                 </div>
             </fieldset>
 
@@ -262,7 +269,7 @@
 
         <div class="nav-buttons">
             <a href="index.html" class="previous-button">Vorige</a>
-            <button type="submit">Volgende</button>
+            <button type="submit" class="next-button">Volgende</button>
         </div>
         
     </form>  

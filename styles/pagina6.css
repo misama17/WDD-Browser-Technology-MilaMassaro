@@ -1,0 +1,56 @@
+/* MARK: Intro text
+/* ---------- SECTION: intro ----------*/
+section:nth-of-type(1) {
+    margin: 0 2em;
+    background-color: var(--color-background-two);
+    color: var(--color-text-one);
+    border-radius: 10px;
+    
+    max-height: 70vh;
+    overflow-y: auto;
+
+    line-height: 1.2;
+
+    & h2 {
+        color: var(--color-accent-three);
+        margin: 2em 0;
+        padding: 1.5em 1em 0 1em;
+
+        &:nth-of-type(1) {
+            margin: 1em 0;
+        }
+    }
+
+    & h3 {
+        margin: 2em 0 1em 0;
+        padding: 0 1.5em;
+    }
+
+    & ul {
+        padding: 0 2em;
+        margin: 0 1em;
+
+        & li {
+            margin: 1em 0;
+        }
+    }
+}  
+
+
+.start-button {
+    text-decoration: none;
+    color: var(--color-text-three);
+    background-color: var(--color-accent-one);
+    padding: 1em 1.5em;
+    margin: 8em 1em 1em 1em;
+    margin-right: auto;
+    width: max-content;
+    border-radius: 5px;
+    border: none;
+    display: block;
+
+    &:hover {
+        background-color: var(--color-background-one);
+        color: var(--color-text-one); 
+    }
+}

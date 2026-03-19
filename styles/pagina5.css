@@ -1,0 +1,56 @@
+/* MARK: Checken gegevens
+/* ---------- SECTION: check ----------*/
+section:nth-of-type(1) {
+    margin: 0 2em;
+    background-color: var(--color-background-two);
+    color: var(--color-text-one);
+    border-radius: 0 0 10px 10px;
+
+    max-height: 70vh;
+    overflow-y: auto;
+
+    line-height: 1.2;
+
+    & h2 {
+        margin: 2em 0 1em 0;
+        padding: 0 1em;
+
+        &:nth-of-type(1) {
+            margin: 1em 0;
+        }
+    }
+
+    & ul:nth-of-type(2) {
+        padding: 0 2em;
+
+        & li {
+            margin: .5em 0;
+        }
+    }
+
+    & > p {
+        margin: .5em 0;
+        padding: 0 1.5em;
+
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
+    }
+}  
+
+
+nav ul {
+    & p {
+        width: fit-content;
+    }
+}
+
+section:nth-of-type(1) ul {
+    margin-bottom: 8em;
+    padding-left: 1.5em;
+
+    & li {
+        line-height: 2;
+        list-style-type: none;
+    }
+}

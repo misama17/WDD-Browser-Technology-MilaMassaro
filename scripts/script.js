@@ -1,11 +1,23 @@
 // MARK: Constanten
 const form = document.querySelector("form")
 const inputs = form.querySelectorAll("input")
+const plusButton = form.querySelector(".plus-button")
+// const extraFieldsets = form.querySelectorAll(".recipient-extra")
+
+
+
+
 
 
 
 // Zet automatische "pop-up" van browser uit.
 form.setAttribute('novalidate', '')
+
+
+
+
+
+
 
 
 // MARK: Functions
@@ -23,7 +35,6 @@ function errorMsg(text, id) {
 
 // Aantekeningen van workshop Victor (zie Notion: https://www.notion.so/Browser-Technology-3-6-30c4a28d1c2c8008a1f6d3a744cb105a?source=copy_link) 
 // en https://codepen.io/3hos15/pen/PwGGGRM
-// MARK: Input velden
 // ---------- Validity Check ----------
 form.addEventListener('submit', event => {
 	// Hiermee zorg je dat er wel wat report wordt
@@ -74,108 +85,3 @@ inputs.forEach(input => {
         } 
     })
 })
-
-
-
-// MARK: Radio buttons
-
-// function conditionalFieldsets(text, id) {
-//     const yesRadio = document.getElementById(id+"-yes")
-
-//     console.log(yesRadio)
-
-//     if (yesRadio) {
-//         yesRadio.innerText = text;
-//     }
-// }
-
-// conditionalFieldsets()
-
-
-// const inputsRadio = form.querySelectorAll("input[type=radio]")
-// const yesRadio = document.getElementById(input.id+"-yes")
-
-// function addRequired() {
-//     if (yesRadio.checked) {
-//         input.setAttribute("required", "true")
-//     }
-// }
-
-// addRequired()
-
-
-// form.addEventListener('submit', event => { 
-//     const yesRadios = document.getElementById(id+"-yes")
-
-//     yesRadios.forEach(yesRadio => {
-//         const fieldset = yesRadio.closest("fieldset")
-
-//         if (!fieldset) return
-
-//         const nextFieldset = fieldset.nextElementSibling
-
-//         if(!nextFieldset) return;
-
-//         if (yesRadio.checked) {
-//             input.setAttribute("required", "true")
-//         } else {
-//             input.removeAttribute("required")
-//         }
-//     })
-
-//     console.log(yesRadio)
-// })
-
-
-
-// form.addEventListener('submit', event => { 
-//     const yesRadios = document.getElementById("deceased-married-yes")
-
-//     yesRadios.forEach(yesRadio => {
-//         const fs = yesRadio.closest("fieldset")
-//     })
-
-//     if (yesRadio) {
-//         let next = yesRadio.closest("fieldset").nextElementSibling
-
-//         if (next) {
-//             const input = next.querySelector("input")
-
-//             if (yesRadio.checked) {
-
-//                 input.setAttribute("required", "true")
-//             } else {
-//                 input.removeAttribute("required")
-//             }
-//         }
-//     }
-// })
-
-form.addEventListener('submit', event => { 
-    const yesRadio = document.getElementById("deceased-married-yes")
-    const extraFieldset = document.querySelector(".extra")
-
-    if(yesRadio.checked) {
-        extraFieldset.setAttribute("required", "true")
-    } else {
-        extraFieldset.removeAttribute("required")
-    }
-})
-
-
-
-
-
-// function addRequired() {
-//     let fieldset = input.classList.contains("--extra")
-
-//     inputs.forEach(input => {
-//         if(isVisible) {
-//             input.setAttribute("required", "")
-//         } else {
-//             input.removeAttribute("required", "")
-//         }
-//     })
-// }
-
-// addRequired()
